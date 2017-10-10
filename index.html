@@ -1,17 +1,15 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<!--[if lt IE 7]>      <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xml:lang="en" lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"> <![endif]-->
-<!--[if IE 7]>         <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xml:lang="en" lang="en" class="no-js lt-ie9 lt-ie8" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"> <![endif]-->
-<!--[if IE 8]>         <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xml:lang="en" lang="en" class="no-js lt-ie9" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"> <![endif]-->
-<!--[if gt IE 8]><!--> <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xml:lang="en" lang="en" class="no-js" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"> <!--<![endif]-->    <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQQPUVFSDxABUlRWBQACVg=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(19),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,s.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,s.now()])}var i=t("handle"),a=t(20),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(p){"stack"in p&&(t(12),t(11),"addEventListener"in window&&t(6),s.xhrWrappable&&t(13),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){C++,M=y.hash,this[u]=b.now()}function o(){C--,y.hash!==M&&i(0,!0);var t=b.now();this[l]=~~this[l]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=b.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,p="cb"+c,h="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location,b=t("loader");if(w[v]&&b.xhrWrappable){var g=t(9),x=t(10),E=t(8),O=t(6),R=t(12),P=t(7),T=t(13),S=t("ee"),N=S.get("tracer");t(14),b.features.spa=!0;var M,j=w[v],C=0;S.on(u,r),S.on(p,r),S.on(d,o),S.on(h,o),S.buffer([u,d,"xhr-done","xhr-resolved"]),O.buffer([u]),R.buffer(["setTimeout"+s,"clearTimeout"+c,u]),T.buffer([u,"new-xhr","send-xhr"+c]),P.buffer([m+c,m+"-done",m+f+c,m+f+s]),E.buffer(["newURL"]),g.buffer([u]),x.buffer(["propagate",p,h,"executor-err","resolve"+c]),N.buffer([u,"no-"+u]),a(T,"send-xhr"+c),a(S,"xhr-resolved"),a(S,"xhr-done"),a(P,m+c),a(P,m+"-done"),E.on("pushState-end",i),E.on("replaceState-end",i),j("hashchange",i,!0),j("load",i,!0),j("popstate",function(){i(0,C>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(12),c=t(11),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",h="-start",l="-end",m="fn"+h,v="fn"+l,w="bstTimer",y="pushState",b=t("loader");b.features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=b.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,b.now()])}),a.on(m,function(t,e,n){this.bstStart=b.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,b.now(),this.bstType])}),c.on(m,function(){this.bstStart=b.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,b.now(),"requestAnimationFrame"])}),o.on(y+h,function(t){this.time=b.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(22)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(19);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,d=a.Response,p=a.fetch,h="prototype";u&&d&&p&&(i(f,function(t,e){r(u[h],e,s),r(d[h],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(22)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("mutation"),o=t(22)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],10:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(22),a=t("ee").get("promise"),c=i(a),s=t(19),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],11:[function(t,e,n){var r=t("ee").get("raf"),o=t(22)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],12:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(22)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],13:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",c)}function i(t){b.push(t),l&&(x?x.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<b.length;t++)r([],b[t]);b.length&&(b=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t(22)(u),p=NREUM.o,h=p.XHR,l=p.MO,m=p.PR,v=p.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],b=[];e.exports=u;var g=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(h,g),g.prototype=h.prototype,d.inPlace(g.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var x=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new l(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],14:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=a.now()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(15),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,p=t("id"),h=t(18),l=t(17),m=window.XMLHttpRequest;a.features.xhr=!0,t(13),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<d;c++)e.addEventListener(u[c],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)})}},{}],15:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],16:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(19),c=t(20),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var l=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(h+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){l[e]=o(h+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],17:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],18:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],19:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],20:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],21:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],22:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(20),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),c=l(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([b,n,r,a]),a}}function h(t,e){w[t]=l(t).concat(e)}function l(t){return w[t]||[]}function m(t){return d[t]=d[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},b={on:h,emit:n,get:m,listeners:l,context:e,buffer:v,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(19),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!x++){var t=g.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(y,function(e,n){t[e]||(t[e]=n)}),s("mark",["onload",a()+g.offset],null,"api");var n=p.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===p.readyState&&i()}function i(){s("mark",["domContent",a()+g.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-g.offset}var c=(new Date).getTime(),s=t("handle"),f=t(19),u=t("ee"),d=window,p=d.document,h="addEventListener",l="attachEvent",m=d.XMLHttpRequest,v=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1044.min.js"},b=m&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:c,now:a,origin:w,features:{},xhrWrappable:b};t(16),p[h]?(p[h]("DOMContentLoaded",i,!1),d[h]("load",r,!1)):(p[l]("onreadystatechange",o),d[l]("onload",r)),s("mark",["firstbyte",c],null,"api");var x=0,E=t(21)},{}]},{},["loader",2,14,5,3,4]);</script>
-<meta http-equiv="Imagetoolbar" content="no" />
-    <meta name="title" content="TripIt | A trip to New York, NY in October 2017" />
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQQPUVFSDxABUlRWBQACVg=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(19),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,s.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,s.now()])}var i=t("handle"),a=t(20),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(p){"stack"in p&&(t(12),t(11),"addEventListener"in window&&t(6),s.xhrWrappable&&t(13),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){C++,M=y.hash,this[u]=b.now()}function o(){C--,y.hash!==M&&i(0,!0);var t=b.now();this[l]=~~this[l]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=b.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,p="cb"+c,h="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location,b=t("loader");if(w[v]&&b.xhrWrappable){var g=t(9),x=t(10),E=t(8),O=t(6),R=t(12),P=t(7),T=t(13),S=t("ee"),N=S.get("tracer");t(14),b.features.spa=!0;var M,j=w[v],C=0;S.on(u,r),S.on(p,r),S.on(d,o),S.on(h,o),S.buffer([u,d,"xhr-done","xhr-resolved"]),O.buffer([u]),R.buffer(["setTimeout"+s,"clearTimeout"+c,u]),T.buffer([u,"new-xhr","send-xhr"+c]),P.buffer([m+c,m+"-done",m+f+c,m+f+s]),E.buffer(["newURL"]),g.buffer([u]),x.buffer(["propagate",p,h,"executor-err","resolve"+c]),N.buffer([u,"no-"+u]),a(T,"send-xhr"+c),a(S,"xhr-resolved"),a(S,"xhr-done"),a(P,m+c),a(P,m+"-done"),E.on("pushState-end",i),E.on("replaceState-end",i),j("hashchange",i,!0),j("load",i,!0),j("popstate",function(){i(0,C>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(12),c=t(11),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",h="-start",l="-end",m="fn"+h,v="fn"+l,w="bstTimer",y="pushState",b=t("loader");b.features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=b.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,b.now()])}),a.on(m,function(t,e,n){this.bstStart=b.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,b.now(),this.bstType])}),c.on(m,function(){this.bstStart=b.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,b.now(),"requestAnimationFrame"])}),o.on(y+h,function(t){this.time=b.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(22)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(19);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,d=a.Response,p=a.fetch,h="prototype";u&&d&&p&&(i(f,function(t,e){r(u[h],e,s),r(d[h],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(22)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("mutation"),o=t(22)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],10:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(22),a=t("ee").get("promise"),c=i(a),s=t(19),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],11:[function(t,e,n){var r=t("ee").get("raf"),o=t(22)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],12:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(22)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],13:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",c)}function i(t){b.push(t),l&&(x?x.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<b.length;t++)r([],b[t]);b.length&&(b=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t(22)(u),p=NREUM.o,h=p.XHR,l=p.MO,m=p.PR,v=p.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],b=[];e.exports=u;var g=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(h,g),g.prototype=h.prototype,d.inPlace(g.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var x=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new l(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],14:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=a.now()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(15),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,p=t("id"),h=t(18),l=t(17),m=window.XMLHttpRequest;a.features.xhr=!0,t(13),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<d;c++)e.addEventListener(u[c],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)})}},{}],15:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],16:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(19),c=t(20),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var l=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(h+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){l[e]=o(h+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],17:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],18:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],19:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],20:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],21:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],22:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(20),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),c=l(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([b,n,r,a]),a}}function h(t,e){w[t]=l(t).concat(e)}function l(t){return w[t]||[]}function m(t){return d[t]=d[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},b={on:h,emit:n,get:m,listeners:l,context:e,buffer:v,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(19),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!x++){var t=g.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(y,function(e,n){t[e]||(t[e]=n)}),s("mark",["onload",a()+g.offset],null,"api");var n=p.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===p.readyState&&i()}function i(){s("mark",["domContent",a()+g.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-g.offset}var c=(new Date).getTime(),s=t("handle"),f=t(19),u=t("ee"),d=window,p=d.document,h="addEventListener",l="attachEvent",m=d.XMLHttpRequest,v=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1044.min.js"},b=m&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:c,now:a,origin:w,features:{},xhrWrappable:b};t(16),p[h]?(p[h]("DOMContentLoaded",i,!1),d[h]("load",r,!1)):(p[l]("onreadystatechange",o),d[l]("onload",r)),s("mark",["firstbyte",c],null,"api");var x=0,E=t(21)},{}]},{},["loader",2,14,5,3,4]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="TripIt | Online travel itinerary and trip planner" />
 <meta name="robots" content="index, follow" />
 <meta name="description" content="TripIt - Free online trip planner and free travel itinerary website for organizing vacations, group trips or business travel" />
 <meta name="keywords" content="trip planner, travel itinerary, itineraries, travel itinerary, travel planner, business travel, trip planning, group travel, travel planning, travel organizer, vacation planning, flight itinerary, vacation planner, group trip, group vacation, itinerary" />
 <meta name="language" content="en" />
-        <title>TripIt | A trip to New York, NY in October 2017</title>
+        <title>TripIt | Online travel itinerary and trip planner</title>
     <link rel="shortcut icon" href="/favicon.ico?v=1bf62e17555c" />
 <link rel="icon" href="/favicon.ico?v=1bf62e17555c" type="image/x-icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=1bf62e17555c" />
@@ -25,13 +23,13 @@ var it = it || {};
 it.global_baseURL = '/';
 it.fbApiKey = '184136951108';
 it.is_mobile = false;
-it.csrf_token = '9DCD7D0E29699DAE78FBB94EBEFB0E57';
+it.csrf_token = 'DC9DABCAF41BC78EC921EC3AF9E54E2D';
 it.login_page = 'https://www.tripit.com/account/login';
 it.csrf_mismatch_page = 'https://www.tripit.com/uhp/csrf';
 </script>
-        <script type="text/javascript" src="//use.typekit.net/bde6nru.js"></script>
-        <script type="text/javascript" src="/js/modernizr.js?v=1bf62e17555c"></script>
-    <script type="text/javascript" src="/js/enquire.min.js?v=1bf62e17555c"></script>
+    <script type="text/javascript" src="//use.typekit.net/bde6nru.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>    <script type="text/javascript" src="/js/enquire.min.js?v=1bf62e17555c"></script>
+    <script type="text/javascript" src="/js/modernizr.js?v=1bf62e17555c"></script>
     <!--[if (gte IE 6)&(lte IE 8)]><!-->
       <script type="text/javascript" src="/js/selectivizr-min.js?v=1bf62e17555c"></script>
     <!--<![endif]-->
@@ -41,2058 +39,971 @@ it.csrf_mismatch_page = 'https://www.tripit.com/uhp/csrf';
           display: none;
       }
     </style>
-  <script src="https://cdn.optimizely.com/js/7107003.js"></script>
-<script src="https://cdn.optimizely.com/js/7107003.js"></script><link rel="stylesheet" type="text/css" media="all" href="/css/tripit.css?v=1bf62e17555c" />
-<link rel="stylesheet" type="text/css" media="all" href="www.tripit.com/css/structures.css?v=1bf62e17555c" />
-<link rel="stylesheet" type="text/css" media="screen" href="www.tripit.com/css/trip/show.css?v=1bf62e17555c" />
-<link rel="stylesheet" type="text/css" media="screen" href="www.tripit.com/css/form.css?v=1bf62e17555c" />
-<link rel="stylesheet" type="text/css" media="screen" href="www.tripit.com/css/components/auto_import_modal.css?v=1bf62e17555c" />
-<link rel="stylesheet" type="text/css" media="screen" href="www.tripit.com/css/trip/sharing.css?v=1bf62e17555c" />
-<link rel="stylesheet" type="text/css" media="screen" href="www.tripit.com/css/components/preview.css?v=1bf62e17555c" />
-<link rel="stylesheet" type="text/css" media="screen" href="www.tripit.com/css/jquery-ui.custom.css?v=1bf62e17555c" />
-<link rel="stylesheet" type="text/css" media="screen" href="www.tripit.com/css/components/feeds.css?v=1bf62e17555c" />
-<link rel="stylesheet" type="text/css" media="screen" href="www.tripit.com/css/components/header.css?v=1bf62e17555c" />
-<link rel="stylesheet" type="text/css" media="screen" href="www.tripit.com/css/footer.css?v=1bf62e17555c" />
-</head>  <body class="desktop" data-js-module="trip" data-js-action="show">
-  <!-- header start -->
-<div style="width: 100%;">
-  <span
+  <script>
+(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement("script");
+    fbds.async = true;
+    fbds.src = "//connect.facebook.net/en_US/fbds.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(["track", 6022078417824, {"value":"0.00","currency":"USD"}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6022078417824&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" />
+</noscript>
+<link rel="stylesheet" type="text/css" media="screen" href="/css/ui/components.css?v=1bf62e17555c" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/v2/tripit.css?v=1bf62e17555c" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/home/index.css?v=1bf62e17555c" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/trip/v2_sharing.css?v=1bf62e17555c" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/jquery-ui.custom.css?v=1bf62e17555c" />
+</head>
+  <body data-js-module="home" data-js-action="index">
+    <span
             id='dfp-gpt-options'
             data-ppid='86f9bd8990f3c30b0ed0d0901696e5a8'
-            data-targets='{"cnb":"true","unb":"true","pur":"l","drm":"false","sxs":"false","fus":"false","sph":"false","rnb":"true","mnb":"true","can":["vx"],"afn":["1682","5498"],"aol":"sfo","adl":"jfk","add":"2017-10-10","adt":"1605","lsn":"New York Marriott Marquis","asl":"jfk","asd":"2017-10-12","ast":"1800","tdr":"2","dut":"2","pct":"New York","pst":"NY","pco":"US","tsd":"2017-10-10","ted":"2017-10-12","pro":"false","t4t":"false","aio":"false","con":"false","lym":["false"]}'
-        ></span>  <div id="header_wrapper" class="">
-    <div>
-<a href="/"><img class="tripit_icon" data-test-marker="tripit_icon" width="100" height="45" alt="TripIt" border="0" src="/images/logos/logo_308x146.png" /></a>      <div class="topHeader">
-        <div id="topline_cta"><a class="action offer sizeS" href="https://www.tripit.com/pro/pointtracker?us=ti&amp;um=ip&amp;un=po">Are you making the most of your miles?</a><a class="text" href="https://www.tripit.com/pro/pointtracker?us=ti&amp;um=ip&amp;un=po">Track 150+ programs now with TripIt Pro</a></div>
-        <div class="underdraw _test_header_box header_menu">
-<a class="underdraw_link" href="#"><span class="profile_full_name">Sam Thompson</span><img class="sprites_nav ico_down_arr_m hlfHMrgL" width="8" height="8" src="/images/clear.gif" alt="Clear" /></a> | <a href="/trip/create">Add a Trip</a> | <a target="_blank" href="/account/zendeskLogin">Support</a>  <div class="jQoptions">
-    <ul class="opts">
-      <li><a href="/people/masayo.okamoto_4">Profile</a></li>
-      <li><a href="/account/edit">Settings</a></li>
-      <li><a href="/account/logout">Sign Out</a></li>
-    </ul>
+            data-targets='{"pro":"false","t4t":"false","aio":"false","con":"false","lym":["false"]}'
+        ></span><nav id="navbar-sihp" class="navbar navbar-default ">
+  <div id="navbar-header-wrapper" class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" id="hamburger-menu" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        Menu
+      </button>
+      <a class="navbar-brand" href="/home">
+        <img alt="TripIt" src="/images/logos/tripit-logo-white.png">
+      </a>
+    </div>
+
+    <div id="navbar-collapse-wrapper">
+      <div class="collapse navbar-collapse container-fluid" id="navbar-collapse-1">
+        <ul id="navbar-left" class="nav navbar-nav">
+          <li><a href="/home">Home<span class="nav-caret"></span></a></li>
+          <li class="default-link"><a href="/trips">Trips</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trips<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/trips">Upcoming Trips</a></li>
+              <li><a href="/trips?subnav=past">Past Trips</a></li>
+              <li><a href="/trips?subnav=unfiled">Unfiled Items</a></li>
+            </ul>
+          </li>
+          <li class="default-link"><a href="/mynetwork/list">Network</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Network<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/mynetwork/list">Connections</a></li>
+              <li><a href="/mynetwork/list">Inner Circle</a></li>
+              <li><a href="/mynetwork/create">Add Connections</a></li>
+              <li><a href="/mynetwork/whoIsClose">Who's Close</a></li>
+            </ul>
+          </li>
+          <li class="hidden-md"><a href="/pro/pointtracker">Point Tracker</a></li>
+          <li><a href="https://www.tripit.com/pro/upgrade?us=ti&um=ip&un=pa">TripIt Pro</a></li>
+          <li><a href="/teams">Teams</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <span id="account-name">
+                <span class="name-text">Sam</span>
+                <span class="caret"></span>
+              </span>
+              <span id="profile-title-mobile">Profile<span class="caret"></span></span>
+            </a>
+              <ul class="dropdown-menu">
+                <li><a href="/people/masayo.okamoto_4">Profile</a></li>
+                <li><a href="/account/edit">Settings</a></li>
+                <li id="sign-out-link"><a href="/account/logout">Sign Out</a></li>
+              </ul>
+          </li>
+          <li id="support-link"><a target="_blank" href="/account/zendeskLogin">Support</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </div>
+  </nav>
+<div id="v2-under-navbar-navigation">
+  </div>
+    <div class="container">
+      <div id="home-index-main-content" class="wrapper" data-selectors="#sihp-upcoming-trips-module,#sihp-next-up-module">
+  <div class="content">
+
+    <div class="main-info">
+      <div id="sihp-next-up-module" class="next-up">
+        <div class="panel panel-dark" data-trip-id="189998028">
+  <div class="panel-heading">
+    Next Up: New York, NY, October 2017  </div>
+  <div class="panel-body items-view">
+    <div class="trip-item-list">
+<div class="trip-item trip-item-2028035276">
+  <div class="trip-item-details-expanded">
+  <div class="date ">TUE, OCT 10</div>
+  <div class="details-large">
+    <div class="trip-item-icon">
+      <span class="air-trip-item-icon-lg"></span>
+    </div>
+    <div class="trip-item-header">
+            <div class="trip-item-title">
+        <a href="/trip/show/id/189998028#trip_item_2028035276">
+          SFO to JFK        </a>
+      </div>
+      <div class="trip-item-subtitle">
+        Virgin America 1682      </div>
+    </div>
+    <div class="trip-item-view-link">
+      <a href="#">
+        <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+  <div class="more-details">
+    <div class="group-3-col-air">
+      <div class="info">
+        <div class="legend">DEPART</div>
+        <div class="data ">08:00<span class="text-muted">&nbsp;PDT</span></div>
+      </div>
+    </div>
+    <div class="group-3-col-air">
+      <div class="info">
+        <div class="legend">ARRIVE</div>
+        <div class="data ">16:05<span class="text-muted">&nbsp;EDT</span></div>
+      </div>
+    </div>
+    <div class="group-3-col-air">
+      <div class="info">
+        <div class="legend">DURATION</div>
+        <div class="data">5h, 5m</div>
+      </div>
+    </div>
+    <div class="group-3-col-air">
+      <div class="info">
+        <div class="legend">CONFIRMATION #</div>
+        <div class="data">H1T91Y</div>
+      </div>
+    </div>
+    <div class="group-3-col-air">
+      <div class="info">
+        <div class="legend">TERMINAL/GATE</div>
+        <div class="data">3/-</div>
+      </div>
+    </div>
+    <div class="group-3-col-air">
+      <div class="info">
+        <div class="legend">SEAT</div>
+        <div class="data">35F</div>
+      </div>
+    </div>
+    <div class="group-3-col-air">
+      <div class="info">
+        <div class="legend">CONNECTS TO</div>
+        <div class="data">-</div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-hidden"></div>
+    <div class="group-3-col-air">
+      <div class="info">
+        <div class="legend">LAYOVER</div>
+        <div class="data">-</div>
+      </div>
+    </div>
   </div>
 </div>
-        <div class="clr"></div>
-        
-<ul class="tabs flashesOnReady">
-    <li ><a href="/home">Home</a></li>
-    <li class="selected"><a href="/trips">Trips</a></li>
-    <li ><a href="/mynetwork/list">Network</a></li>
-    <li ><a href="/pro/pointtracker">Point Tracker</a></li>
-        <li ><a data-googleanalytics-outgoingurl="/pro/InProductUpsell" href="https://www.tripit.com/pro/upgrade?us=ti&amp;um=ip&amp;un=pa">TripIt Pro</a></li>
-    <li ><a href="/teams">Teams</a></li>
-</ul>
 
-        <div id="login_header_wrapper" class="_test_header_box">
-            <button  type="button" class="action social_cta load_linkedin modalLaunchButton sizeS" data-modal-id="header_social_share_modal_dialog" data-modal-width="620"><img class="hlfHMrgR social_share sprites_soc soc_ico_linkedin" width="16" height="16" data-social-network="LinkedIn" src="/images/clear.gif" alt="Clear" />Share your trips</button>          <div id="header_social_share_modal_dialog" class="stdPad" title="Connect to LinkedIn (and get travel tips from friends!)" style="display: none;">
-            <div class="fLt fntGrySltDk fntL" style="width:260px;">
-              Let your LinkedIn friends know about your travels. They'll be able to see your general travel plans (not the full details) and they'll be able to leave travel tips for your trip.
-            </div>
-            <img class="fRt brdrGryDkr" width="330" height="108" src="/images/clips/fbc-ex-1.png" alt="Fbc-ex-1" />            <div class="clrBr"></div>
-            <div class="hrGry"></div>
-            <br />
-            <div class="fLt"><strong>Note:</strong> Private trips are never shared on LinkedIn.</div>
-            <div class="fRt">
-<a class="fRt stdHMrgL action primary" href="https://www.tripit.com/account/linkNewSocialIdentifier?container_type_code=L&amp;should_request_publishing_permissions=1">Continue</a>              <button  type="button" class="fRt" data-modal-close="data-modal-close">Close</button>            </div>
-            <div class="clr"></div>
-          </div>
-          <div class="clr"></div>
+<div class="trip-item-details-collapsed hidden">
+  <div class="details-small">
+    <div class="trip-item-icon">
+      <div class="date ">OCT 10</div>
+      <span class="air-trip-item-icon-sm"></span>
+    </div>
+    <div class="trip-item-header">
+      <div class="secondary-info">
+        <div class="legend">DEPART</div>
+        <div class="">08:00<span class="text-muted">&nbsp;PDT</span></div>
+      </div>
+      <div class="primary-info">
+        <div><a href="/trip/show/id/189998028#trip_item_2028035276">SFO to JFK</a></div>
+        <div class="">Virgin America 1682</div>
+      </div>
+    </div>
+    <div class="trip-item-view-link">
+      <a href="#">
+        <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+</div></div><div class="trip-item trip-item-2028037827">
+  <div class="trip-item-details-expanded hidden">
+  <div class="date">TUE, OCT 10</div>
+  <div class="details-large">
+    <div class="trip-item-icon">
+      <span class="lodging-trip-item-icon-lg"></span>
+    </div>
+    <div class="trip-item-header">
+      <div class="trip-item-title">
+        <a href="/trip/show/id/189998028#trip_item_2028037827">
+          New York Marriott Marquis        </a>
+      </div>
+      <div class="trip-item-subtitle">
+        Check-in      </div>
+    </div>
+    <div class="trip-item-view-link">
+      <a href="#">
+        <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+  <div class="more-details">
+    <div class="group-1-col">
+      <div class="info">
+        <div class="legend">ADDRESS</div>
+        <div class="data">1900 University Ave, New York, NY</div>
+      </div>
+    </div>
+
+    <div class="group-2-col-first">
+      <div class="info">
+        <div class="legend">PHONE</div>
+        <div class="data">4153773028</div>
+      </div>
+      <div class="info">
+        <div class="legend">CONFIRMATION #</div>
+        <div class="data">-</div>
+      </div>
+      <div class="info">
+        <div class="legend">HOTEL CHECK-OUT</div>
+        <div class="data">
+          <div>11:00 <span class="text-muted">EDT</span></div>
+          <div><small>on Oct 12</small></div>
         </div>
       </div>
-      <div class="clr"></div>
     </div>
-    <div class="clr"></div>
-  </div>
-  <div class="clr"></div>
-</div>
-<!-- header end -->
-  <div id="flush_layout">
-    <div id="content">
-      <div id="cookie-help" class="alert_yellow hidden">
-  <div class="fntBld fntOng fntXXL">Cookies must be enabled.</div>
-  <br />
-  Please modify your browser settings so we can remember you when you visit TripIt. After cookies are enabled, please refresh the page.<br />
-  <br /><a data-click-event="toggleCrazyInPageOutOfDateHowTo hideShowMeHow" data-toggle-event="hideShowMeHow" href="https://tripit.zendesk.com/hc/en-us/requests/new">Show me how.</a>  <div data-toggle-event="toggleCrazyInPageOutOfDateHowTo" id="how_to" style="display: none;">
-    <ul class="std_list">
-      <li><a target="_self" href="#internet_explorer_cookie_help">Internet Explorer 6/7</a></li>
-      <li><a target="_self" href="#firefox_2_cookie_help">Firefox 2.0</a></li>
-      <li><a target="_self" href="#firefox_1_cookie_help">Firefox 1.5</a></li>
-      <li><a target="_self" href="#safari_cookie_help">Safari</a></li>
-      <li><a target="_self" href="#other_browser_cookie_help">Other Browsers</a></li>
-    </ul>
-    <br />
-    
-    <span class="fntBld" id="internet_explorer_cookie_help">Internet Explorer 6/7</span>
-    <ol class="std_list">
-      <li>Click on Tools - Internet Options.</li>
-      <li>Select the Privacy tab.</li>
-      <li>Click the Advanced button.
-      <li>Check "Override automatic cookie handling."</li>
-      <li>Check "Accept" under "First-party Cookies" and "Third-party Cookies."</li>
-      <li>Click OK to save changes.</li>
-      <li>Click on "click here" in the main window.  If the error persists, close and restart your browser.</li>
-    </ol>
-    
-    <span class="fntBld" id="firefox_2_cookie_help">Firefox 2.0</span>
-    <ol class="std_list">
-      <li>Click on Tools - Options.</li>
-      <li>Select the Privacy tab.</li>
-      <li>Check the "Accept cookies from sites" box.</li>
-      <li>Click OK to save changes.</li>
-      <li>Click on "click here" in the main window. If the error persists, close and restart your browser.</li>
-    </ol>
-    
-    <span class="fntBld" id="firefox_1_cookie_help">Firefox 1.5</span>
-    <ol class="std_list">
-      <li>Click on Tools - Options.</li>
-      <li>Click on Privacy.</li>
-      <li>Select the Cookies Tab</li>
-      <li>Check "Allow sites to set cookies"</li>
-      <li>Click OK to save changes.</li>
-      <li>Click on "click here" in the main window.  If the error persists, close and restart your browser.</li>
-    </ol>
-    
-    <span class="fntBld" id="safari_cookie_help">Safari</span>
-    <ol class="std_list">
-      <li>Click the Safari menu, and select Preferences.</li>
-      <li>Click on the Security icon.</li>
-      <li>Check "Always" under Accept Cookies.</li>
-      <li>Click on "click here" in the main window.  If the error persists, close and restart your browser.</li>
-    </ol>
-    
-    <span class="fntBld" id="other_browser_cookie_help">Other Browsers</span>
-    <p>Cookie options are generally found within the browser’s privacy settings, but may require some navigation to find. Please refer to your browser documentation for help, or contact your system administrator.</p>
-    
-    <span class="fntBld" id="mh">More Help</span>
-    <p>If you have followed the steps outlined above but are still having trouble with our site, please try the following to supplemental steps:</p>
-    <ol class="std_list">
-      <li>Disable any secure software you may be using.  Such software may prevent your browser from using cookies</li>
-      <li>Close all copies of your browser and restart it.</li>
-      <li>If the problems persist, please contact your system administrator for more assistance.</li>
-    </ol>
-  </div>
-  <div class="clr"></div>
-</div>
-            <span
-            id='dfp-gpt-options'
-            data-ppid='86f9bd8990f3c30b0ed0d0901696e5a8'
-            data-targets='{"cnb":"true","unb":"true","pur":"l","drm":"false","sxs":"false","fus":"false","sph":"false","rnb":"true","mnb":"true","can":["vx"],"afn":["1682","5498"],"aol":"sfo","adl":"jfk","add":"2017-10-10","adt":"1605","lsn":"New York Marriott Marquis","asl":"jfk","asd":"2017-10-12","ast":"1800","tdr":"2","dut":"2","pct":"New York","pst":"NY","pco":"US","tsd":"2017-10-10","ted":"2017-10-12","pro":"false","t4t":"false","aio":"false","con":"false","lym":["false"]}'
-        ></span><div id="trip_content">
-  <div id="trip_header" data-trip-id="189998028">
-<div class="arrow_separator">
-  <h2 class="content">
-    <span class="edge"></span>
-    <span class="body"><a href="/trip/edit/id/189998028?redirect_url=https%3A%2F%2Fwww.tripit.com%2Ftrip%2Fshow%2Fid%2F189998028">New York, NY, October 2017</a></span>
-    <span class="tip"></span>
-  </h2>
-</div>  <div id="trip_header_meta">
-    <h3>Oct 10 - 12, 2017 / New York, NY</h3>
-  <div id="participants_container">
-    <div id="sharing-dialog-modal-container" class="hidden">
-  <div id="your_contacts_modal_dialog" title="Your TripIt connections" data-close-event="addToInviteSelected closeContactsDialog" data-open-event="clickConnections">
-  <form id="connectionsForm" name="connectionsForm" accept-charset="UTF-8" method="post" action="/"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" />    <div id="your_contacts_results" class="table_grid">
-      <table class="collapse">
-        <tbody>
-          <tr height="35" class="non_participant">
-            <td width="20" height="20">
-              <input type="checkbox" id="betsyle@yahoo.com" class="email_address is_reg" name="betsyle@yahoo.com" value="1" />            </td>
-            <td width="60">
-              <span class="non_participant">
-                On&nbsp;TripIt              </span>
-            </td>
-            <td width="180">Betsy Moeller</td>
-            <td width="350" class="email_address">betsyle@yahoo.com</td>
-          </tr>
-          <tr height="35" class="non_participant">
-            <td width="20" height="20">
-              <input type="checkbox" id="baixry@gmail.com" class="email_address is_reg" name="baixry@gmail.com" value="1" />            </td>
-            <td width="60">
-              <span class="non_participant">
-                On&nbsp;TripIt              </span>
-            </td>
-            <td width="180">Cher Bai</td>
-            <td width="350" class="email_address">baixry@gmail.com</td>
-          </tr>
-          <tr height="35" class="non_participant">
-            <td width="20" height="20">
-              <input type="checkbox" id="devtripit@gmail.com" class="email_address is_reg" name="devtripit@gmail.com" value="1" />            </td>
-            <td width="60">
-              <span class="non_participant">
-                On&nbsp;TripIt              </span>
-            </td>
-            <td width="180">Dev TripIt</td>
-            <td width="350" class="email_address">devtripit@gmail.com</td>
-          </tr>
-          <tr height="35" class="non_participant">
-            <td width="20" height="20">
-              <input type="checkbox" id="james.trypt@gmail.com" class="email_address is_reg" name="james.trypt@gmail.com" value="1" />            </td>
-            <td width="60">
-              <span class="non_participant">
-                On&nbsp;TripIt              </span>
-            </td>
-            <td width="180">Jameson Q Trypt</td>
-            <td width="350" class="email_address">james.trypt@gmail.com</td>
-          </tr>
-          <tr height="35" class="non_participant">
-            <td width="20" height="20">
-              <input type="checkbox" id="jenalum@gmail.com" class="email_address is_reg" name="jenalum@gmail.com" value="1" />            </td>
-            <td width="60">
-              <span class="non_participant">
-                On&nbsp;TripIt              </span>
-            </td>
-            <td width="180">Jennifer Lum</td>
-            <td width="350" class="email_address">jenalum@gmail.com</td>
-          </tr>
-          <tr height="35" class="participant">
-            <td width="20" height="20">
-              <input type="checkbox" id="masayo@gmail.com" class="email_address is_reg" name="masayo@gmail.com" value="1" disabled="disabled" />            </td>
-            <td width="60">
-              <span class="participant">
-                Planner              </span>
-            </td>
-            <td width="180">Masayo Okamoto</td>
-            <td width="350" class="email_address">masayo@gmail.com</td>
-          </tr>
-          <tr height="35" class="non_participant">
-            <td width="20" height="20">
-              <input type="checkbox" id="masayo.okamoto+3@tripit.com" class="email_address is_reg" name="masayo.okamoto+3@tripit.com" value="1" />            </td>
-            <td width="60">
-              <span class="non_participant">
-                On&nbsp;TripIt              </span>
-            </td>
-            <td width="180">Mooch Okamoto</td>
-            <td width="350" class="email_address">masayo.okamoto+3@tripit.com</td>
-          </tr>
-          <tr height="35" class="non_participant">
-            <td width="20" height="20">
-              <input type="checkbox" id="alieander@gmail.com" class="email_address is_reg" name="alieander@gmail.com" value="1" />            </td>
-            <td width="60">
-              <span class="non_participant">
-                On&nbsp;TripIt              </span>
-            </td>
-            <td width="180">Tommy O&#039;Neil</td>
-            <td width="350" class="email_address">alieander@gmail.com</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div id="no_invitations" class="fntXL hidden">You've invited all of your TripIt contacts to this trip.</div>
-    <div class="clrBr"></div>
-    <br />
-    <div class="fRt">
-      <button  type="button" class="primary" data-click-event="addToInviteSelected">Add to invite</button>      <button  type="button" class="hidden primary" data-click-event="closeContactsDialog">Close</button>    </div>
-    <div class="clr"></div>
-  </form>
-</div>  <div id="imports_modal_dialog" title="Look up Address Book contacts" data-viewers="" data-planners="masayo@gmail.com" data-travelers="masayo@tripit.com,masayo.okamoto+4@tripit.com,masayo.okamoto@concur.com">
-  <div class="error_box"></div>
-    <!-- WAIT begin -->
-  <div id="imports_con_wait">
-    <div>
-      <img src="/images/icons/loading_sm.gif" alt="Loading_sm" />      Loading... please wait.
-    </div>
-  </div>
-  <!-- WAIT end -->
 
-  <!-- CON begin -->
-  <div id="imports_con_list">
-    <form id="fmProp" name="fmProp" accept-charset="UTF-8" method="post" action="/mynetwork/getContacts"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" />      <input type="hidden" name="trip_id" value="189998028" />      <input type="hidden" name="trip_item_id" />      <input type="hidden" name="destination" value="trip/show" />      <input type="hidden" name="invitation_type" />      <p class="fntXXL fntGryDk">Contacts from your address book</p>
-      <div id="results" class="table_grid">
-        <table id="result_grid" class="collapse">
-        </table>
+    <div class="group-2-col-second">
+      <div class="info">
+        <div class="legend">LINK</div>
+        <div class="data"><a target="_blank" href="https://www.tripit.com/home/redirectPage/page_key/C0C1DFF2A124C0EA1CA6B9A8990D71B5">New York Marriott Marquis</a></div>
       </div>
-    </form>
-  </div>
-
-  <!-- List BUT begin -->
-  <div id="imports_but_list">
-    <button  type="button" class="fRt" data-click-event="contactsSelected">Continue</button>    <div class="clr"></div>
-  </div>
-  <!-- List BUT end -->
-
-  <div id="imports_con_input">
-    <form id="fmImport" name="fmImport" accept-charset="UTF-8" method="post" action="/mynetwork/getContacts"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" />      <input type="hidden" name="trip_id" value="189998028" />      <input type="hidden" name="destination" value="trip/show" />      <input type="hidden" name="invitation_type" />      <p class="fntXXL fntGryDk">View contacts in your Gmail, Google Apps, or Yahoo address book</p>
-      <div class="form_container">
-        <p class="fieldBlock"><label for="email_address"><strong>Look up contacts for this email address:</strong></label>
-<input id="email_address" name="email_address" title="Look up contacts for this email address:" value="masayo@tripit.com" type="email" tabindex="1" /></p>
+      <div class="info">
+        <div class="legend">HOTEL CHECK-IN</div>
+        <div class="data">15:00 <span class="text-muted">EDT</span></div>
       </div>
-      <div class="security_box">
-        <div class="fRt bgGry" style="width:170px;margin-left:70px;">
-  <div class="hlfPad">
-    <div class="fLt" style="height: 100%;">
-      <img class="hlfPad" src="/images/mynetwork/lock.png" alt="Lock" />    </div>
-    <div style="width:130px;" class="fntS fRt hlfVPadB">
-      Don't worry&mdash;we won't share this information or send anything to your contacts until you tell us to. <span class="">We don't share your email address</span> (<a data-modal-id="security_box_modal_dialog" id="" class="modalLaunchButton" href="#">more info</a>).<div id="security_box_modal_dialog" class="stdPad" style="display: none;" title="We don't share your email address">
-  <div class="fntXXL">
-    <div id="mContent">
-<p id="title">Email Privacy</p>
-<p>
-  TripIt helps you stay informed about your trips and your TripIt network by providing personalized email notifications.<br />
-  You will receive notifications about trips you’re planning on TripIt, and you’ll get alerts about activity in your TripIt network.<br />
-  You will also receive an email when someone invites you to connect with them on TripIt.
-</p>
-<p>
-  Periodically, TripIt sends emails to let our users know about new features, new functionality,<br />
-  promotions, sweepstakes, or special offers from our partners.
-</p>
-<p>
-  You can update your email settings to opt into or out of any of these emails at any time.
-</p>
-</div>
+      <div class="info">
+        <div class="legend">DURATION</div>
+        <div class="data">2 Nights</div>
+      </div>
+    </div>
   </div>
-  <div class="clr"></div>
 </div>
+
+
+<div class="trip-item-details-collapsed">
+  <div class="details-small">
+    <div class="trip-item-icon">
+      <div class="date">OCT 10</div>
+      <span class="lodging-trip-item-icon-sm"></span>
+    </div>
+    <div class="trip-item-header">
+      <div class="secondary-info">
+        <div class="legend">CHECK IN</div>
+        <div>15:00 <span class="text-muted">EDT</span></div>
+      </div>
+      <div class="primary-info">
+        <div><a href="/trip/show/id/189998028#trip_item_2028037827">New York Marriott Marquis</a></div>
+        <div>1900 University Ave, New York, NY</div>
+      </div>
+    </div>
+    <div class="trip-item-view-link">
+      <a href="#">
+        <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+</div></div><div class="trip-item trip-item-2028038809">
+  <div class="trip-item-details-expanded hidden">
+  <div class="date">WED, OCT 11</div>
+  <div class="details-large">
+    <div class="trip-item-icon">
+      <span class="activity-theatre-trip-item-icon-lg"></span>
+    </div>
+    <div class="trip-item-header">
+      <div class="trip-item-title">
+        <a href="/trip/show/id/189998028#trip_item_2028038809">
+          Hamilton, An American Musical        </a>
+      </div>
+      <div class="trip-item-subtitle">
+        -      </div>
+    </div>
+    <div class="trip-item-view-link">
+      <a href="#">
+        <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+  <div class="more-details">
+    <div class="group-1-col">
+      <div class="info">
+        <div class="legend">THEATRE ADDRESS</div>
+        <div class="data">266 W 46th Street, New York, NY</div>
+      </div>
+    </div>
+      <div class="activity-col-2-first">
+        <div class="info">
+          <div class="legend">PHONE</div>
+          <div class="data">-</div>
+        </div>
+      </div>
+      <div class="activity-col-2-last">
+        <div class="info">
+          <div class="legend">LINK</div>
+          <div class="data">-</div>
+        </div>
+      </div>
+      <div class="activity-col-3">
+        <div class="info">
+          <div class="legend">CONFIRMATION #</div>
+          <div class="data">-</div>
+        </div>
+      </div>
+      <div class="activity-col-3">
+        <div class="info">
+          <div class="legend">START</div>
+          <div class="data">19:00 <span class="text-muted">EDT</span></div>
+        </div>
+      </div>
+      <div class="activity-col-3">
+        <div class="info">
+          <div class="legend">END</div>
+          <div class="data">
+            <div>21:00 <span class="text-muted">EDT</span></div>
+            <div><small></small></div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="trip-item-details-collapsed">
+  <div class="details-small">
+    <div class="trip-item-icon">
+      <div class="date">OCT 11</div>
+      <span class="activity-theatre-trip-item-icon-sm"></span>
+    </div>
+    <div class="trip-item-header">
+      <div class="secondary-info">
+        <div class="legend">START</div>
+        <div>19:00 <span class="text-muted">EDT</span></div>
+      </div>
+      <div class="primary-info">
+        <div><a href="/trip/show/id/189998028#trip_item_2028038809">Hamilton, An American Musical</a></div>
+        <div>-</div>
+      </div>
+    </div>
+    <div class="trip-item-view-link">
+      <a href="#">
+        <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+</div></div><div class="trip-item trip-item-2028037828">
+  <div class="trip-item-details-expanded hidden">
+  <div class="date">THU, OCT 12</div>
+  <div class="details-large">
+    <div class="trip-item-icon">
+      <span class="lodging-trip-item-icon-lg"></span>
+    </div>
+    <div class="trip-item-header">
+      <div class="trip-item-title">
+        <a href="/trip/show/id/189998028#trip_item_2028037828">
+          New York Marriott Marquis        </a>
+      </div>
+      <div class="trip-item-subtitle">
+        Check-out      </div>
+    </div>
+    <div class="trip-item-view-link">
+      <a href="#">
+        <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+  <div class="more-details">
+    <div class="group-1-col">
+      <div class="info">
+        <div class="legend">ADDRESS</div>
+        <div class="data">1900 University Ave, New York, NY</div>
+      </div>
+    </div>
+
+    <div class="group-2-col-first">
+      <div class="info">
+        <div class="legend">PHONE</div>
+        <div class="data">4153773028</div>
+      </div>
+      <div class="info">
+        <div class="legend">CONFIRMATION #</div>
+        <div class="data">-</div>
+      </div>
+    </div>
+
+    <div class="group-2-col-second">
+      <div class="info">
+        <div class="legend">LINK</div>
+        <div class="data"><a target="_blank" href="https://www.tripit.com/home/redirectPage/page_key/A3B0242F682EFFEEEFBB81049B142458">New York Marriott Marquis</a></div>
+      </div>
+      <div class="info">
+        <div class="legend">HOTEL CHECK-OUT</div>
+        <div class="data">11:00 <span class="text-muted">EDT</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="trip-item-details-collapsed">
+  <div class="details-small">
+    <div class="trip-item-icon">
+      <div class="date">OCT 12</div>
+      <span class="lodging-trip-item-icon-sm"></span>
+    </div>
+    <div class="trip-item-header">
+      <div class="secondary-info">
+        <div class="legend">CHECK OUT</div>
+        <div>11:00 <span class="text-muted">EDT</span></div>
+      </div>
+      <div class="primary-info">
+        <div><a href="/trip/show/id/189998028#trip_item_2028037828">New York Marriott Marquis</a></div>
+        <div>1900 University Ave, New York, NY</div>
+      </div>
+    </div>
+    <div class="trip-item-view-link">
+      <a href="#">
+        <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+</div></div>    </div>
+  </div>
+  <div class="panel-footer">
+    <a href="#" data-toggle="modal" data-target="#add-plan-modal-189998028">Add a plan</a>
+    <span class="separator"></span>
+    <a href="/trip/show/id/189998028">See full trip</a>
+  </div>
+</div>
+<div class="modal" id="add-plan-modal-189998028">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        Add Plans to New York, NY, October 2017      </div>
+      <div class="modal-body">
+        <div class="wrapper">
+          <div class="trip-item-categories">
+            <div class="category-title">
+              Transportation            </div>
+            <div class="media">
+              <div class="media-body">
+                <a href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=A">Flight</a>                                                              </div>
+            </div>
+            <div class="media">
+              <div class="media-body">
+                <a href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=C">Car Rental</a>                                                              </div>
+            </div>
+            <div class="media">
+              <div class="media-body">
+                <a href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=L">Rail</a>                                                              </div>
+            </div>
+            <div class="media">
+              <div class="media-body">
+                <a href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=U">Cruise</a>                                                              </div>
+            </div>
+            <div class="media">
+              <div class="media-body">
+                <a href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=P">Parking</a>                                                              </div>
+            </div>
+            <div class="media">
+              <div class="media-body">
+                <a href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=T">Other</a>                                                <div><small>(Ferry, etc.)</small></div>              </div>
+            </div>
+           </div>
+          <div class="trip-item-categories">
+            <div class="category-title">
+              Activities            </div>
+            <div class="media">
+              <div class="media-body">
+                <a href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=H">Lodging</a>                                                              </div>
+            </div>
+            <div class="media">
+              <div class="media-body">
+                <a href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=R">Restaurant</a>                                                              </div>
+            </div>
+            <div class="media">
+              <div class="media-body">
+                <a href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=Y&amp;detail_type_code=M">Meeting</a>                                                              </div>
+            </div>
+            <div class="media">
+              <div class="media-body">
+                <a href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=Y">Activity</a>                <div><small>(Theatre, Concert, etc.)</small></div>                                              </div>
+            </div>
+           </div>
+          <div class="trip-item-categories">
+            <div class="category-title">
+              Other            </div>
+            <div class="media">
+              <div class="media-body">
+                <a href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=M">Map</a>                                                              </div>
+            </div>
+            <div class="media">
+              <div class="media-body">
+                <a href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=D">Directions</a>                                                              </div>
+            </div>
+            <div class="media">
+              <div class="media-body">
+                <a href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=N">Note</a>                                                              </div>
+            </div>
+           </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>      </div>
-    </form>
-  </div>
-
-  <div id="modal_con_err">
-    <div>No contacts were found in your address book.</div>
-  </div>
-  <!-- CON end -->
-
-  <!-- BUT begin -->
-  <div id="imports_but_input">
-    <div class="clrBr"></div>
-    <div class="hrGry triVMrgT stdVMrgB"></div>
-    <button  type="submit" class="fRt primary" data-click-event="addressBookSelected">Get Contacts</button>    <div class="clr"></div>
-  </div>
-
-  <div id="modal_but_err">
-    <div class="clrBr"></div>
-    <div class="hrGry dubVMrgT stdVMrgB"></div>
-    <button  type="button" class="fRt" data-modal-close="#imports_modal_dialog">Close</button>    <div class="clr"></div>
-  </div>
-  <!-- BUT end -->
-
-</div></div>
-<div class="popover" id="add_participant" title="Share Trip" data-show-as-dialog="">
-  <span class="caret_wrapper">
-    <span class="caret"></span>
-  </span>
-  <div class="popover_controls">
-    <a class="popover_close" href="#">X</a>  </div>
-  <ul class="sharing-dialog-tabs">
-    <li class="sharing-dialog-tab">
-      <a href="#sharing-dialog-tab-email">Email</a>
-    </li>
-    <li class="sharing-dialog-tab">
-      <a href="#sharing-dialog-tab-link">Link</a>
-    </li>
-    <div class="sharing-dialog-tab social-networks">
-      <a id="sharing-opener-facebook" class="sharing-opener sharing-icon-facebook" href="#" title="Share to Facebook"></a>
-      <a id="sharing-opener-twitter" class="sharing-opener sharing-icon-twitter" href="#" title="Share to Twitter"></a>
-      <a id="sharing-opener-linkedin" class="sharing-opener sharing-icon-linkedin" href="#" title="Share to LinkedIn"></a>
+      <div class="upcoming-trips-pro-upsell">
+        <div id="sihp-upcoming-trips-module">
+          <div class="upcoming-trips">
+  <div class="panel panel-default">
+    <div class="panel-heading">Upcoming Trips
+      <div class="trip-sort-menu">
+        <div class="btn-group">
+          <button class="btn btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="trip-sort-menu-title">Traveler</span> <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a class=" ajax-link" data-target-selectors="#sihp-upcoming-trips-module,#sihp-next-up-module" href="https://www.tripit.com/home?view_filter=all_trips">View All</a></li>
+            <li><a class=" ajax-link" data-target-selectors="#sihp-upcoming-trips-module,#sihp-next-up-module" href="https://www.tripit.com/home?view_filter=traveler">Traveler</a></li>
+            <li><a class=" ajax-link" data-target-selectors="#sihp-upcoming-trips-module,#sihp-next-up-module" href="https://www.tripit.com/home?view_filter=non_traveler">Not Traveler</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </ul>
-  <div id="sharing-dialog-tab-email" class="sharing-dialog-tab" data-event-select="clickIconEmail" data-event-close="closeEmailFormX">
-    <div class="notices"></div>
-    <form id="trip_invitation" accept-charset="UTF-8" method="post" action="/trip_invitation/updateSend"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" />      <input type="hidden" name="trip_id" value="189998028" />      <span id="from_container">From: <span class="input_content">Sam Thompson</span></span>
-      <div class="clr"></div>
-      <div id="shaing-dialog-invitation-type-container">
-        Add <select name="invitation_type" id="invitation_type"><option value="traveler">Travelers</option>
-<option value="viewer">Viewers</option>
-<option value="planner">Planners</option>
-</select>        <span class="learn_more">
-          What is a <span class="invitation_type"></span>?
-        </span>
-        <div class="popover learn_more_popover">
-          <div class="popover_controls">
-            <a class="popover_close" href="#">X</a>          </div>
-          <div>
+    <div class="panel-body">
+      <div class="trip" data-trip-id="189998028">
+        <p><a class="trip-title" href="/trips/189998028">New York, NY, October 2017</a></p>
+        <p>New York, NY</p>
+        <p>Oct 10 - 12, 2017          <span class="num-days">(3 days)</span>
+        </p>
+        <div class="trip-actions">
+          <a href="/trip/edit/id/189998028">Edit</a>
+          <span class="separator"></span>
+          <a href="#" data-toggle="modal" data-target="#share-trip-modal" class="sharing-modal-opener" data-trip-id="189998028">Share</a>
+          <span class="separator"></span>
+          <a href="/trip/print/id/189998028">Print</a>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer">
+      <a href="/trip/create">Add a trip</a>
+      <span class="separator"></span>
+      <a href="/trip/listUpcoming">See all trips</a>
+    </div>
+  </div>
+</div>        </div>
+        <div class="pro-upsell panel panel-warning"><div class="panel-body"><div id="sihp-pro-upsell-maximize-points-category" class="gtm-action" style="display:none">SIHP - Pro Upsell Module</div><div id="sihp-pro-upsell-maximize-points-action" class="gtm-action" style="display:none">Maximize your points! Try TripIt Pro now!</div><h5>Maximize your points!</h5><p>Automatically track your points on your Virgin America flight to JFK.</p><script>var url = 'https://' + document.domain + '/pro/pointtracker?us=ti&um=ad&un=ptr1&r=http://adclick.g.doubleclick.net/pcs/click%253Fxai%253DAKAOjsvsmWg5siK0vwDpztJD4yD74jO1aQy9SqZZ9M76HVwXi3ZFJ4BDtZpem8U7VH28BatFG4rDktcjof1boyIlkWTuT6S5qAdxgzZgs2vlSV078mo7BqMt0NaWJrAmjIGiKFKpzkVnkZ4HmSmjdbKjvSuJM4fLbd-L3on4SnuyvJoSh68AIyv4GUs_zTZ3iN5Mu756Zqzsxd3R7vAdgceowFRfrRWjxNF-GT3d3bb2uARvfg%2526sig%253DCg0ArKJSzFo9N3tFlSFLEAE%2526urlfix%253D1%2526adurl%253D&c=943642371'; document.write('<a class="pro-upsell-link sihp-gtm-tracking" data-event-action-selector="#sihp-pro-upsell-maximize-points-action" data-event-category-selector="#sihp-pro-upsell-maximize-points-category" href="' + url + '">Try TripIt Pro now!</a>');</script></div></div>
+      </div>
+    </div> <!-- /.main-info -->
+
+    <div class="secondary-info">
+      <div class="ai-links-connections">
+        <div id="auto-import-cta" class="panel panel-default">
+          <div class="panel-heading">Automatically Forward Plans</div>
+          <div class="panel-body">
+            <div class="wrapper">
+              <div class="add-email-address full">
+                <a href="#" data-toggle="modal" data-target=".auto-import-add-modal">
+                  <span class="auto-import-icon"></span>
+                  <div class="auto-import-add-link">Set up auto-import and never<br>forget to forward a plan!</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <a href="/account/edit/section/about_you#linked_accounts">Go to Settings</a>
+          </div>
+        </div>
+        <div class="tripit-links">
+  <div class="panel panel-warning">
+    <div class="panel-body">
+      <h5>Get the most out of TripIt!</h5>
+      <div class="thirds-row">
+  <script>var url = 'https://' + document.domain + '/account/show?r=http://adclick.g.doubleclick.net/pcs/click%253Fxai%253DAKAOjsvtp7gKF_xYIryzRXJHVTCAwLuxd3Cull2DSy5IBgUF3yh3pOrPoUOrARqkXr-vtqErcazKnf81PrYndemOzuBhq2ykOV2gwuUnx2Jl_U-gHiUTLuPraZj2NBVClaRBv6LQL8cf01fdHlzqNnTYM4w8WdJdiZ0UrRkLfpNFCr_ZvtNsb0pOSG0xZd1txROZixfXGrsKzaVHsAwfFdfF4eyH3hy_Z0aP51GKcIFls_J5aptKSg%2526sig%253DCg0ArKJSzMG3TEFMqphlEAE%2526urlfix%253D1%2526adurl%253D'; document.write('<a class="sihp-gtm-tracking" id="sihp-feature-module-home-city" data-event-action-selector="#sihp-feature-module-home-city-action" data-event-category-selector="#sihp-feature-module-home-city-category" href="' + url + '">');</script>
+    <div id="sihp-feature-module-home-city-category" class="gtm-action" style="display:none">SIHP - Feature Module</div>
+    <span class="traveler-profile-icon-md"></span>
+    <p id="sihp-feature-module-home-city-action">Add your home city</p>
+  </a>
+</div>      <div class="thirds-row">
+        <a id="sihp-feature-module-calendar" class="sihp-gtm-tracking" data-event-action-selector="#sihp-feature-module-calendar-action" data-event-category-selector="#sihp-feature-module-calendar-category" href="#">
+          <div id="sihp-feature-module-calendar-category" class="gtm-category">SIHP - Feature Module</div><span class="ical-icon-md"></span>
+          <p id="sihp-feature-module-calendar-action">Add TripIt to your calendar</p>
+        </a>
+      </div>
+      <div class="thirds-row">
+<script>var url = 'https://' + document.domain + '/account/show#/profile/traveler-profile'; document.write('<a class="sihp-gtm-tracking" id="sihp-feature-module-passport" data-event-action-selector="#sihp-feature-module-passport-action" data-event-category-selector="#sihp-feature-module-passport-category" href="' + url + '">');</script>
+    <div id="sihp-feature-module-passport-category" class="gtm-action" style="display:none">SIHP - Feature Module</div>
+    <span class="traveler-profile-icon-md"></span>
+    <p id="sihp-feature-module-passport-action">Add your passport information</p>
+  </a>
+</div>    </div>
+  </div>
+</div>        <div id="connections" class="panel panel-default">
+          <div class="panel-heading">Connections near New York, NY</div>
+          <div class="panel-body">
+            <div id="connections-wrapper">
+              <div class="connection">
+                <img src="https://www.tripit.com/images/icons/default_avatar.png" class="default-avatar"/>
+                <a href="/people/betsyle">Betsy Moeller</a>
+              </div>
+              <div class="connection">
+                <img src="https://www.tripit.com/images/icons/default_avatar.png" class="default-avatar"/>
+                <a href="/people/jennifer.lum.sf">Jennifer Lum</a>
+              </div>
+              <div class="connection">
+                <img src="https://www.tripit.com/images/icons/default_avatar.png" class="default-avatar"/>
+                <a href="/people/alieander">Tommy O&#039;Neil</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <a href="mynetwork/create" id="find-connections-link">Find more connections</a>
+            <span class="connections-footer-pipe"></span>
+            <a href="/mynetwork/list">See all 8 connections</a>
+          </div>
+        </div>
+      </div> <!-- /.ai-links-connections -->
+      <div class="unfiled-stats">
+        <div id="unfiled-items" class="panel panel-default">
+          <div class="panel-heading">Unfiled Items</div>
+          <div class="panel-body">
             <ul>
-              <li>Travelers are going on this trip. They can see and edit trip details.</li>
               <li>
-                <span>Viewers can see your trip but can't edit or comment on trip details.</span>
-                <span>(Groups can be added only as viewers.)</span>
+                <div class="media">
+                  <div class="media-left">
+                    <img src="/images/icons/map_list.gif" alt="Map_list" />                  </div>
+                  <div class="media-body">
+                    <a href="/trip_item/show/id/1871093684">
+                      brrana                    </a>
+                    <span>
+                    </span>
+                  </div>
+                </div>
               </li>
-              <li>Planners can see and edit trip details but aren't going on this trip.</li>
-              <li>Travelers, Viewers and Planners become TripIt connections.</li>
+              <li>
+                <div class="media">
+                  <div class="media-left">
+                    <img src="/images/icons/note_list.gif" alt="Note_list" />                  </div>
+                  <div class="media-body">
+                    <a href="/trip_item/show/id/1831403294">
+                      Fwd: Reservations of Torre Dorada - ML25-09-12PK                    </a>
+                    <span>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="media">
+                  <div class="media-left">
+                    <img src="/images/icons/note_list.gif" alt="Note_list" />                  </div>
+                  <div class="media-body">
+                    <a href="/trip_item/show/id/1831400072">
+                      Fwd: Ticket Order Confirmation                    </a>
+                    <span>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="media">
+                  <div class="media-left">
+                    <img src="/images/icons/activity_meeting_list.gif" alt="Activity_meeting_list" />                  </div>
+                  <div class="media-body">
+                    <a href="/reservation/show/id/681176999">
+                      Stand up                    </a>
+                    <span>
+                      (1 item)
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="media">
+                  <div class="media-left">
+                    <img src="/images/icons/note_list.gif" alt="Note_list" />                  </div>
+                  <div class="media-body">
+                    <a href="/trip_item/show/id/1710833475">
+                      Fwd: La Caba&ntilde;a Machu Picchu : Booking Code :: BIM-HS-BSAYS4RM4RW6                    </a>
+                    <span>
+                    </span>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
-        </div>
-      </div>
-      <p class="fieldBlock"><label for="email_addresses">Email Address(es):</label>
-<input id="email_addresses" class="itUI-emailAddresses" name="email_addresses" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" size="60" placeholder="Email addresses" /></p>
-      <div id="sharing-dialog-import-container">
-        <div id="import_methods">
-  Import from:
-  <span class="fntS">
-    <a data-modal-id="your_contacts_modal_dialog" data-modal-width="670" data-open-callback="window.TRIPIT.social.SharingDialog.prototype.trigger" id="" class="modalLaunchButton" href="#">TripIt Connections</a> <span class="import-methods-separator">or</span> <a data-modal-id="imports_modal_dialog" data-modal-width="750" id="" class="modalLaunchButton" href="#">Email Address Book</a> (Gmail, Yahoo, Google Apps)
-  </span>
-</div>      </div>
-      <div class="share_message_container">
-        <label for="share_message">Message to be sent:</label>
-
-<p class="fieldBlock textareaWrapper"><textarea id="share_message" class="share-message-disabled" name="share_message" title="Message to be sent:" disabled="disabled" rows="5" cols="30">I use TripIt to organize and share travel plans, so trip details are in one place.
-
-I simply forwarded travel confirmation emails to plans@tripit.com, and TripIt automatically created this detailed itinerary that can be accessed anytime, on any device. Try it. It&#039;s free.</textarea>
-</p>
-      </div>
-      <p class="sharing-options-cta">
-        <a class="sharing-dialog-options-link" data-open-text="Less Options" data-closed-text="More Options" data-event-expand="expandOptions" data-event-collapse="collapseOptions" href="#">Less Options</a>      </p>
-      <div class="sharing-options-container">
-        <label for="should_send_copy"><input type="hidden" name="should_send_copy" value="0" /><input type="checkbox" id="should_send_copy" name="should_send_copy" title="Send me a copy of this email" value="1" /> <span class="input_content">Send me a copy of this email</span></label>
-        <div class="fntL group_share" data-num-non-shared-groups="2" data-num-free-groups="0">
-  <div>
-    <span class="fntBld">TripIt Groups</span>
-  </div>
-  <div id="group_share_groups" class="fLt">
-    <div class="hlfVMrg group" data-group-unique-name="TripIt_UX_58ba036da321f">
-      <label for="group_ids_b9ba4d52a8d0bfa784a7c49bbc591f73"><input type="checkbox" id="group_ids_b9ba4d52a8d0bfa784a7c49bbc591f73" name="group_ids[]" title="TripIt UX" value="103489" /> <span class="input_content">TripIt UX</span></label>
-    </div>
-    <div class="hlfVMrg group" data-group-unique-name="Concur all">
-      <label for="group_ids_e07aeb77b20bd1a24b96a26369ad7139"><input type="checkbox" id="group_ids_e07aeb77b20bd1a24b96a26369ad7139" name="group_ids[]" title="Concur" value="72583" /> <span class="input_content">Concur</span></label>
-    </div>
-    <span id="group_share_free_container" class="hidden">
-      Want to share with
-      <span id="group_share_free_group_names"></span>? <a href="/account/updateTripItForTeams">Upgrade to TripIt for Teams.</a>    </span>
-  </div>
-</div>
-        <div class="fntL">
-          These contacts:
-          <br/>
-          <div>
-            <label for="is_traveler"><input type="hidden" name="is_traveler" value="0" /><input type="checkbox" id="is_traveler" name="is_traveler" title="are travelers on this trip" value="1" /> <span class="input_content">are travelers on this trip</span></label>
-            <a data-modal-id="trip_sharing_travelers_modal_dialog" id="" class="modalLaunchButton" href="#">[?]</a>            <div class="clr"></div>
-            <label for="is_connection"><input type="hidden" name="is_connection" value="0" /><input type="checkbox" id="is_connection" name="is_connection" title="should be added as connections" value="1" checked="checked" /> <span class="input_content">should be TripIt connections if they aren't already</span></label>
+          <div class="panel-footer">
+            <a href="/trip/listUnfiledItems">
+              See 1 more            </a>
           </div>
         </div>
-      </div>
-      <div class="clr"></div>
-      <input type="hidden" id="is-as-arranger" name="is_as_arranger" />      <input type="hidden" name="should_refresh_async" value="1" />      <button  type="submit" class="primary">Send</button>      <a class="preview-email" href="#">Preview Email</a>    </form>
-  </div>
-  <div id="sharing-dialog-tab-emailsuccess" class="sharing-dialog-tab hidden" data-event-close="closeEmailSuccessX">
-    <h3>Success!</h3>
-    <p>Your email has been sent!</p>
-    <p id="is_traveler_business_upsell" class="hidden sharing-upsell">Planning trips for other people? Find out how <a id="cta-t4t" class="cta" data-event-click="clickCtaT4T" href="/teams">TripIt for Teams</a> makes it easy.</p>
-    <p id="inner_circle_upsell" class="sharing-upsell">Automatically share all of your trips.  <a id="cta-inner-circle" class="cta" data-event-click="clickCtaInnerCircle" href="/mynetwork/list/is_inner_circle_only/1">Add people</a> to your inner circle</p>
-    <button  type="button" class="primary" data-modal-close="data-modal-close" data-event-close="closeEmailSuccessButton">Close</button>  </div>
-  <div id="sharing-dialog-tab-link" class="sharing-dialog-tab" data-event-select="clickIconLink" data-event-close="closeLinkFormX">
-    <p>Share your travel plans using the link below and allow family, friends and colleagues to view your trip itinerary with one click.</p>
-    <div class="clrBr"></div>
-    
-<p class="fieldBlock textareaWrapper"><textarea id="trip_public_url" readonly="readonly">https://www.tripit.com/p/9C9F81D030D20335D809E84F7BA817DD</textarea>
-</p>
-    <div class="clrBr"></div>
-    <button  type="button" class="primary" data-modal-close="data-modal-close" data-event-close="closeLinkFormButton">Close</button>  </div>
-</div>
-
-<div id="trip_sharing_travelers_modal_dialog" title="About trip sharing settings" class="hidden">
-    <br />
-    <p class="fntBld">
-        Traveler
-    </p>
-    <p>
-        All travelers will see this trip as a location on their calendar.
-    </p>
-    <button  type="button" class="fRt" data-modal-close="data-modal-close">Close</button></div>
-<div id="email-preview-modal" class="hidden preview-modal"></div>
-<div id="itinerary-preview-modal" class="hidden preview-modal"></div>
-<div class="popover" id="edit_participant">
-  <div class="popover_controls">
-    <a class="popover_close" href="#">X</a>  </div>
-  <div class="participant_details">
-    <span class="display_name"></span> (<a class="link" href="#">profile</a>)
-  </div>
-  <div class="type_details">
-    <form id="edit_invitation" accept-charset="UTF-8" method="post" action="/trip_invitation/update"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" />      <input type="hidden" name="trip_id" value="189998028" />      <input type="hidden" name="enc_to_account_id" />      is a <select name="new_invitation_type" id="new_invitation_type"><option value="traveler">Traveler</option>
-<option value="viewer">Viewer</option>
-<option value="planner">Planner</option>
-</select> on this trip
-    </form>
-  </div>
-  <form id="delete_participant" accept-charset="UTF-8" method="post" action="/trip_invitation/delete"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" />    <input type="hidden" name="trip_id" value="189998028" />    <input type="hidden" name="enc_to_account_id" />    <button  type="button" id="delete_invitation" class="sizeS">Remove from trip</button>  </form>
-  <form id="delete_group" accept-charset="UTF-8" method="post" action="/trip_invitation/deleteForGroup"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" />    <input type="hidden" name="trip_id" value="189998028" />    <input type="hidden" name="travel_group_trip_invitation_id" />    <button  type="button" id="delete_group_invitation" class="sizeS">Remove from trip</button>  </form>
-</div>
-<div class="participants editable">
-<ul class="traveler"><li class="list_header">Travelers:</li>
-<li class="participant owner" data-display-name="Sam Thompson" data-profile-url="https://www.tripit.com/people/masayo.okamoto_4" data-invitation-type="traveler" data-enc-account-id="fKHTHPm-n1LIhrvJTwcNsw" data-trip-id="189998028"><button  type="button" class="sizeS"><span>Sam Thompson</span></button></li>
-<li><button  type="button" class="add_invitation sizeS primary" data-invitation-type="traveler">Add</button></li></ul><ul class="viewer"><li class="list_header">Viewers:</li>
-<li><button  type="button" class="add_invitation sizeS primary" data-invitation-type="viewer">Add</button></li></ul><ul class="planner"><li class="list_header">Planners:</li>
-<li class="participant" data-display-name="Masayo Okamoto" data-profile-url="https://www.tripit.com/people/masayo" data-invitation-type="planner" data-enc-account-id="cwmPCfQRrcuoSQ2AVkQZqQ" data-trip-id="189998028"><button  type="button" class="sizeS"><span>Masayo Okamoto</span></button></li>
-<li><button  type="button" class="add_invitation sizeS primary" data-invitation-type="planner">Add</button></li></ul></div>  </div>
-  </div>
-<a class="trip_photo" href="/trip/edit/id/189998028?redirect_url=https%3A%2F%2Fwww.tripit.com%2Ftrip%2Fshow%2Fid%2F189998028"><img alt="New York, NY, October 2017" src="/images/places/newyorkcity.jpg" /></a></div>
-<div id="trip_navigation_container">
-  <form accept-charset="UTF-8" method="post" action="/trip/update"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" />    <ul id="trip_navigation">
-      <li><a title="Map" class="trip-navigation trip-navigation-map" href="/trip/map/id/189998028"> </a></li>
-      <li>
-        <a id="options" title="Options" class="trip-navigation trip-navigation-options" href="#"> </a>        <!-- Begin Options Popover -->
-        <div class="popover" id="options_popover">
-          <span class="caret_wrapper">
-            <span class="caret"></span>
-          </span>
-          <div class="popover_controls">
-            <a title="Close" class="popover_close" href="#">X</a>        </div>
-<ul><li><img class="export_to_calendar" src="/images/clear.gif" alt="Clear" /><a data-modal-id="top_cal_link_modal_dialog" data-modal-width="540" data-click-event="calendarOptionsSelected" id="" class="sizeS modalLaunchButton" href="#">Export to calendar</a>  <div id="top_cal_link_modal_dialog" title="Add to Calendar" class="calendar-modal">
-    <div id="top_cal_link_selectModeView" data-show-event="calendarOptionsSelected" data-hide-event="calendarFeedSelected calendarDownloadSelected">
-      <div class="feed-container feed-pane">
-        <div class="feed-instructions">
-          <img class="calendar-icon enabled" data-click-event="calendarFeedSelected" src="/images/icons/calendar_sync_enabled.gif" alt="Calendar_sync_enabled" />          <div>
-            <h5 class="feed-header" class=" feed-enabled"><a data-click-event="calendarFeedSelected" href="#">Subscribe to calendar feed</a></h5>
-            <span class="feed-text">Best for desktop calendars. Not supported by Outlook 2003.</span>
+                <div id="travel-stats" class="panel panel-default">
+          <div class="panel-heading">Your Travel Stats</div>
+          <div class="panel-body">
+            <table class="table table-striped table-hover">
+              <thead>
+              <tr>
+                <th></th>
+                <th>2017</th>
+                <th>Total</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class="caption">Trips</td>
+                <td>9</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td class="caption">Days</td>
+                <td>243</td>
+                <td>513</td>
+              </tr>
+              <tr>
+                <td class="caption">Distance</td>
+                <td>0 mi</td>
+                <td>0 mi</td>
+              </tr>
+              <tr>
+                <td class="caption">Cities</td>
+                <td>14</td>
+                <td>42</td>
+              </tr>
+              <tr>
+                <td class="caption">Countries</td>
+                <td>7</td>
+                <td>12</td>
+              </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-      </div>
-      <div class="download-container feed-pane">
-        <div class="download-instructions">
-          <img class="calendar-icon enabled" data-click-event="calendarDownloadSelected" src="/images/icons/calendar_dl_enabled.gif" alt="Calendar_dl_enabled" /><br />
-          <h5 class="feed-header feed-enabled"><a data-click-event="calendarDownloadSelected" href="#">Download calendar file</a></h5>
-          <span class="feed-text">Calendar files are only available for individual trips</span>
-        </div>
-      </div>
-    </div>
-    <div id="top_cal_link_calendarFeedView" data-show-event="calendarFeedSelected" data-hide-event="calendarOptionsSelected" class="suppressed">
-      <div class="feed-modal-pane">
-        <div class="feed-modal-pane-header">Here's your calendar feed&hellip;</div>
-        <div>Copy and paste this into your calendar program:</div>
-        <div><a id="calendar-feed-link" href="https://www.tripit.com/feed/ical/private/E46E6021-889925C04A1C034EC3DCAAB54A787D93/tripit.ics">https://www.tripit.com/feed/ical/private/E46E6021-889925C04A1C034EC3DCAAB54A787D93/tripit.ics</a></div>
-        <a data-click-event="calendarOptionsSelected" href="#">&laquo; Back</a>      </div>
-      <div class="clr"></div>
-    </div>
-    <!-- End calendar container div -->
-    <div id="top_cal_link_downloadView" class="suppressed" data-show-event="calendarDownloadSelected" data-hide-event="calendarOptionsSelected">
-      <div class="feed-modal-pane">
-        <span class="feed-modal-pane-header">How to use this file&hellip;</span>
-        <ol class="calendar-instructions">
-          <li>First, go to <a href="/trip/download/id/189998028/tripit_oct10_to_oct12.ics">download the file</a> in your browser and select '<strong>Save</strong>'</li>
-          <li>Open your desktop calendar application.</li>
-          <li>
-            In your calendar application, go to '<strong>File</strong>' then '<strong>Import</strong>'
-            <div class="calendar-parenthetical"><i>(Make sure to tell your calendar to import an iCalendar or vCalendar file (.vcs))</i></div>
-          </li>
-          <li>Go to your downloads and import the file '<strong>tripit_oct10_to_oct12.ics</strong>'</li>
-          <li>You're done! Your trip should be in your calendar.</li>
-        </ol>
-        <a data-click-event="calendarOptionsSelected" href="#">&laquo; Back</a>      </div> <!-- End download instructions -->
-      <div class="clr"></div>
-    </div>
-    <!-- End download container div -->
-    <div class="clr"></div>
-    <div class="more-about-calendars-container">
-      <a target="_blank" href="https://www.tripit.com/home/redirectPage/page_key/593C37CB9BED315C10E1DAA096AE6C85">Get help with calendar</a>    </div>
-  </div> <!-- End select-mode view -->
-</li>
-<li><img class="edit_trip" src="/images/clear.gif" alt="Clear" /><a href="/trip/edit/id/189998028?redirect_url=https%3A%2F%2Fwww.tripit.com%2Ftrip%2Fshow%2Fid%2F189998028">Edit Trip</a></li>
-<li><img class="merge_trip" src="/images/clear.gif" alt="Clear" /><a href="/trip/merge/id/189998028">Merge Trips</a></li>
-<li><img class="delete_trip" src="/images/clear.gif" alt="Clear" /><a href="/trip/delete/id/189998028?redirect_url=https%3A%2F%2Fwww.tripit.com%2Ftrip%2Fshow%2Fid%2F189998028">Delete Trip</a></li>
-<li><img class="view_trip_history" src="/images/clear.gif" alt="Clear" /><a href="/trip/listChanges/id/189998028">View Trip History</a></li>
-<li><img class="cost" src="/images/clear.gif" alt="Clear" /><a id="cost" href="#">Cost <strong>$1,836.00</strong></a></li>
-<li><img class="lock" src="/images/clear.gif" alt="Clear" /><a id="privacy_settings" title="Privacy Setting" href="/trip/edit/id/189998028?redirect_url=https%3A%2F%2Fwww.tripit.com%2Ftrip%2Fshow%2Fid%2F189998028">Trip Privacy Settings</a></li></ul>        </div>
-      <!-- End Options Popover -->
-      </li>
-      <li><a title="Print" target="_blank" class="trip-navigation trip-navigation-print" href="/trip/print/id/189998028"> </a></li>
-      <li>
-          <a title="Flight Alerts" class="trip-navigation trip-navigation-alert" href="https://www.tripit.com/pro/upgrade?us=ti&amp;um=ip&amp;un=ph"> </a>      </li>
-      <li>
-        <input type="hidden" name="id" value="189998028" />        <label for="is_private" data-tooltip="Marking a trip &quot;private&quot; will prevent connections from viewing your plans."><input type="hidden" name="is_private" value="0" /><input type="checkbox" id="is_private" name="is_private" value="1" /> <span class="input_content">Private</span></label>
-      </li>
-    </ul>
-  </form>
+      </div> <!-- /.unfiled-stats -->
+    </div> <!-- /.secondary-info -->
+  </div> <!-- /.content -->
 
-  <div class="sharing">
-    <span class="sharing-container">
-      <a id="sharing-popover-opener-email" href="#" class="sharing-opener sharing-icon-email" title="Email Itinerary" data-show-options="1"></a>
-    </span>
-    <span class="sharing-container">
-      <a id="sharing-popover-opener-link" href="#" class="sharing-opener sharing-icon-link" title="Copy Itinerary Link" data-public-guid="9C9F81D030D20335D809E84F7BA817DD"></a>
-    </span>
-    <span class="sharing-container">
-      <a id="sharing-opener-facebook" href="#" class="sharing-opener sharing-icon-facebook" title="Share to Facebook" data-link="https://www.tripit.com/p/9C9F81D030D20335D809E84F7BA817DD"></a>
-    </span>
-    <span class="sharing-container">
-      <a id="sharing-opener-twitter" href="#" class="sharing-opener sharing-icon-twitter" title="Share to Twitter" data-url="https://www.tripit.com/p/9C9F81D030D20335D809E84F7BA817DD" data-text="I'm planning a trip to New York, NY, in October! Check out my @TripIt itinerary:"></a>
-    </span>
-    <span class="sharing-container">
-      <a id="sharing-opener-linkedin" href="#" class="sharing-opener sharing-icon-linkedin" title="Share to LinkedIn" data-url="https://www.tripit.com/p/9C9F81D030D20335D809E84F7BA817DD" data-title="I'm planning a trip to New York, NY, in October!" data-summary="Check out my TripIt itinerary. I simply forwarded my travel confirmation emails to plans@tripit.com, and TripIt automagically created a detailed itinerary with all my plans in one place. Try TripIt for your next trip. It’s free!"></a>
-    </span>
-  </div>
-</div>
-  <!-- Begin Cost Popover -->
-  <div class="popover" id="cost_popover">
-    <span class="caret_wrapper">
-      <span class="caret"></span>
-    </span>
-    <div class="popover_controls">
-      <span class="success">Saved</span>
-      <span class="error">Not saved</span>
-      <a title="Close" class="popover_close" href="#">X</a>    </div>
-    <p>Trip Cost: <span id="trip_cost"></span></p>
-    <div class="scrollpane">
-      <div id="cost_popover_contents">
-        <form accept-charset="UTF-8" method="post" action="/reservation/update"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" /><input type="hidden" name="id" value="768082669" /><input type="hidden" name="trip-item-id" value="768082669" /><label data-tooltip="Flight(s)">Flight(s)</label>
-<p class="fieldBlock"><input id="total_cost" name="total_cost" type="text" /></p>
-</form><form accept-charset="UTF-8" method="post" action="/reservation/update"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" /><input type="hidden" name="id" value="768083825" /><input type="hidden" name="trip-item-id" value="768083825" /><label data-tooltip="New York Marriott Marquis">New York Marriott Marquis</label>
-<p class="fieldBlock"><input id="total_cost" name="total_cost" value="$1,836.00" type="text" /></p>
-</form><form accept-charset="UTF-8" method="post" action="/reservation/update"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" /><input type="hidden" name="id" value="768084297" /><input type="hidden" name="trip-item-id" value="768084297" /><label data-tooltip="Hamilton, An American Musical">Hamilton, An American Musical</label>
-<p class="fieldBlock"><input id="total_cost" name="total_cost" type="text" /></p>
-</form>      </div>
-      <div class="scrollbar">
-        <div class="scrollbar_handle"></div>
-      </div>
-    </div>
-    <p id="cost_popover_explanation">Enter non-USD costs as 40.70 EUR, 99 CAD, etc.</p>
-  </div>
-  <!-- End Cost Popover -->
-  <div class="clr"></div>
-  <div id="trip_item_list">
-
-
-
-<div class="date_header add_plans">
-  <div class="arrow_separator">
-  <h2 class="content" data-tooltip="Oct 10, 2017">
-    <span class="edge"></span>
-    <span class="body"><a data-date="10/10/2017" data-trip-id="189998028" href="#">Tue, Oct 10</a></span>
-    <span class="tip"></span>
-  </h2>
-</div>
-  <span class="weather">
-  Bronx, NY: <img alt="partly_cloudy" class="weather_condition weather_condition_partly_cloudy" height="21" width="21" src="/images/clear.gif" />Partly Cloudy 79&deg;F / 65&deg;F
-</span>
-  <span class="add_plans hide_on_print"><a class="hide_on_print" data-date="10/10/2017" data-trip-id="189998028" href="#">Add Plans</a></span>
-  <div class="popover add_event_popover">
-  <span class="caret_wrapper">
-    <span class="caret"></span>
-  </span>
-  <div class="popover_controls">
-    <a class="popover_close" href="#">X</a>  </div>
-  <div id="add_event_modal_dialog" class=" ">
-    <h1>Add plans</h1>
-<div class="column"><h2>Transportation</h2><ul>            <li>
-                <a class="air" href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=A">Flight</a>                                                            </li>
-            <li>
-                <a class="car" href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=C">Car Rental</a>                                                            </li>
-            <li>
-                <a class="rail" href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=L">Rail</a>                                                            </li>
-            <li>
-                <a class="cruise" href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=U">Cruise</a>                                                            </li>
-            <li>
-                <a class="parking" href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=P">Parking</a>                                                            </li>
-            <li>
-                <a class="transport" href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=T">Other</a>                                                <span>(Ferry, etc.)</span>            </li>
-        </ul>
-    </div>
-<div class="column"><h2>Activities</h2><ul>            <li>
-                <a class="lodging" href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=H">Lodging</a>                                                            </li>
-            <li>
-                <a class="restaurant" href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=R">Restaurant</a>                                                            </li>
-            <li>
-                <a class="activity_meeting" href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=Y&amp;detail_type_code=M">Meeting</a>                                                            </li>
-            <li>
-                <a class="activity" href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=Y">Activity</a>                <span>(Theatre, Concert, etc.)</span>                                            </li>
-        </ul>
-    </div>
-<div class="column"><h2>Other</h2><ul>            <li>
-                <a class="map" href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=M">Map</a>                                                            </li>
-            <li>
-                <a class="directions" href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=D">Directions</a>                                                            </li>
-            <li>
-                <a class="note" href="/trip_item/create?trip_id=189998028&amp;date=10%2F10%2F2017&amp;trip_item_type_code=N">Note</a>                                                            </li>
-        </ul>
-    </div>
-</div>
-</div>
-</div><div class="clr"></div>
-<div class="air_segment_status">
-  <div class="flst flst_main_sgmt_det_ong">
-  <span class="ltip"></span>
-  <a href="https://www.tripit.com/alerts?us=ti&amp;um=ip&amp;un=pp">Worried about delays? Get TripIt Pro!</a>  <span class="rtip"></span>
-</div>
-</div>
-<div id="trip_item_2028035276" class="trip_item" data-trip-item-id="2028035276" data-trip-item-type-code="A">
-  <div class="trip-item-object actionable-object">
-    <!-- ICON AND HEADER ROW -->
-    <div class="trip-item-row">
-      <div class="trip-item-icon">
-        <img alt="Flight" title="Flight" class="type_image_sprites_trip_4 type_image_air_sprites_trip_4" width="60" height="60" src="/images/clear.gif" />      </div>
-      <div class="trip-item-object-pane">
-        <div class="trip-item-header">
-  
-    <div class="text-info-with-partner">
-
-  <div class="date">
-    10/10/2017  </div>
-  <div class="main-info">
-    SFO to JFK    <span class="separator"></span>
-    <span class="more-info">Virgin America 1682</span>
-  </div>
-  <div class="other-info">
-    <div class="left">Confirmation #: <strong>H1T91Y</strong></div>
-    <div class="right"></div>
-  </div>
-    </div>
-    <div class="agency-logo">
-        <img alt="Travel Incorporated" title="Travel Incorporated" src="https://www.tripit.com/uploads/images/3/9/2/39247af65cbae7b91c277baeae615f3dc68.png" />    </div>
-</div>
-      </div>
-    </div>
-    <div class="" id="2028035276">
-<div class="trip-item-row">
-  <div class="trip-item-time-cell">
-<span class="trip_item_time" >
-  <span class="time_display">08:00<span class="crosshairs"></span></span>
-  <span class="time_display_details">
-    <span class="am_pm"></span>
-    <span class="timezone">PDT</span>
-  </span>
-</span>  </div>
-  <div class="trip-item-object-pane">
-    <div class="checkpoint">
-      <h3 class="checkpoint-type">Depart</h3>
-      <h2 class="airport-name">San Francisco</h2>
-      <div class="gate-location">
-        <span class="terminal-section">
-          Terminal:
-          <span class="terminal">3</span>
-        </span>
-        <span class="gate-section">
-          Gate:
-          <span class="gate"></span>
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="trip-item-row">
-  <div class="trip-item-time-cell">
-<span class="trip_item_time" >
-  <span class="time_display">16:05<span class="crosshairs"></span></span>
-  <span class="time_display_details">
-    <span class="am_pm"></span>
-    <span class="timezone">EDT</span>
-  </span>
-</span>  </div>
-  <div class="trip-item-object-pane">
-    <div class="checkpoint">
-      <h3 class="checkpoint-type">Arrive</h3>
-      <h2 class="airport-name">New York</h2>
-      <div class="gate-location">
-        <span class="terminal-section">
-          Terminal:
-          <span class="terminal"></span>
-        </span>
-        <span class="gate-section">
-          Gate:
-          <span class="gate"></span>
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-    <!-- REST OF TRIP ITEM CONTENT -->
-    <div class="trip-item-row">
-      <div class="object-actions">
-<ul class="trip-item-options hide-on-print">
-  <li>
-    <a class="_test_edit_trip_item" href="/reservation/edit/id/768082669#a_segment_2028035276">Edit <span class="opt opt-edit"></span></a>  </li>
-  <li>
-    <a href="/reservation/updateCopy/id/768082669?redirect_url=https%3A%2F%2Fwww.tripit.com%2Ftrip%2Fshow%2Fid%2F189998028">Copy <span class="opt opt-copy"></span></a>  </li>
-  <li>
-    <a href="/reservation/updateMove/id/768082669?redirect_url=https%3A%2F%2Fwww.tripit.com%2Ftrip%2Fshow%2Fid%2F189998028">Move <span class="opt opt-move"></span></a>  </li>
-  <li>
-    <a href="/trip_item/share/id/2028035276">Share <span class="opt opt-share"></span></a>  </li>
-    <li>
-      <form id="delete-form" accept-charset="UTF-8" method="post" action="/reservation/delete"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" />        <input type="hidden" name="trip_item_id" value="2028035276" />        <button  type="submit" onclick="return confirm(&quot;Are you sure you want to delete this  segment?&quot;);" class="_test_delete_trip_item deprecatedLinkify">Delete <span class="opt opt-delete"></span></button>      </form>
-    </li>
-</ul>
-      </div>
-      <div class="trip-item-object-pane">
-        <!-- MAIN CONTENT -->
-        <div class="trip-item-content">
-                    <!-- FLIGHT DETAILS -->
-<div class="duration-checkpoint">
-  <div class="duration-location">
-    <span class="duration-section">
-      Duration: <span class="duration">5H, 5M</span>    </span>
-    <span class="layover-section">
-      Layover: <span class="no-content-label">None</span>    </span>
-    <span class="connection-section">
-      Connects to: <span class="no-content-label">None</span>    </span>
-  </div>
-</div>
-
-<div class="pro-checkpoint">
-  <div class="pro-location">
-    <span>
-      <a href="https://www.tripit.com/pro/upgrade?us=ti&amp;um=ip&amp;un=pq">Pro:</a>    </span>
-    <span class="track-refunds">
-      <img width="10" height="12" alt="" src="/images/clear.gif" />      <a href="https://www.tripit.com/account/proFeatures/view/flight-refunds?us=ti&amp;um=ip&amp;un=pr">Price Tracker</a>    </span>
-    <span class="alt-flights">
-      <img width="20" height="12" alt="" src="/images/clear.gif" />      <a href="https://www.tripit.com/alternateflights?us=ti&amp;um=ip&amp;un=pi">Alternate Flights</a>    </span>
-    <span class='free-link-separator'></span>
-                <span class='flight-status'><a target="_blank" href="http://www.flightstats.com/go/FlightStatus/flightStatusByFlight.do?airlineCode=VX&amp;flightNumber=1682&amp;departureDate=2017-10-10&amp;submit=Submit">Check Flight Status</a></span>
-    <span class='check-in'><a target="_blank" href="https://www.virginamerica.com/flight-check-in">Online Check-in</a></span>
-  </div>
-</div>
-          <!-- SEATS FOR FLIGHTS -->
-          <div class="seats-section">
-            Seat(s):
-            <strong class="seats">35F</strong>          </div>
-
-          <!-- PRO - ALT FLIGHTS -->
-          <div class='pro-checkpoint'>
-  <div class="pro-seat-location">
-    <span>
-      <a href="https://www.tripit.com/pro/upgrade?us=ti&amp;um=ip&amp;un=pq">Pro:</a>    </span>
-    <span class="seat-alerts">
-      <img alt="seat alerts icon" class="icon-seat" src="/images/clear.gif" />      <a href="https://www.tripit.com/seattracker?us=ti&amp;um=ip&amp;un=tz">Seat Tracker</a>    </span>
-
-    <span class='free-link-separator'></span>
-    <span class='seat-advice'><a target="_blank" class="track-click-event hide_on_print" href="http://data.seatexpert.com/tpi/find.php?airline=VX&amp;flight=1682&amp;date=Oct-10-2017&amp;city1=SFO&amp;city2=JFK">Get Seat Advice</a></span>
-      </div>
-</div>
-        <!-- COLLAPSIBLE SECTIONS -->
-        <div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="" data-target-id="travelers-section-2028035276"data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>
-    Traveler Info  </div>
-  <div id="travelers-section-2028035276" class="collapsible-body travelers">
-    <div class="traveler">
-      <span class="name">Masayo Okamoto</span>
-      <span class="ticket-num">Ticket #: </span>
-      <span class="loyalty-num">Frequent Flyer #: UVW53268</span>
-    </div>
-  </div>
-</div>
-
-        <div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280352761" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Aircraft and Service Details</div>
-  <div class="collapsible-body" id="20280352761">
-    <div>
-      <span class="left-side no-content-label">Baggage Claim:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Entertainment:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side">Meal:</span>
-      <span class="right-side">Food for purchase</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">On-time %:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side">Aircraft Type:</span>
-      <span class="right-side">Airbus A320</span>
-    </div>
-    <div>
-      <span class="left-side">Fare Class:</span>
-      <span class="right-side">Economy (E)</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Stops:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Distance:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Segment Notes:</span>
-      <span class="right-side"></span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="false" data-target-id="20280352762" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Travel Agency</div>
-  <div class="collapsible-body" id="20280352762">
-    <div>
-      <span class="left-side">Travel Agency Name:</span>
-      <span class="right-side">Travel Incorporated</span>
-    </div>
-    <div>
-      <span class="left-side">Travel Agency Confirmation #:</span>
-      <span class="right-side">2F484U</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency URL:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side">Travel Agency Phone:</span>
-      <span class="right-side">866-712-2801</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency Email:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency Contact:</span>
-      <span class="right-side"></span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280352763" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Supplier Info</div>
-  <div class="collapsible-body" id="20280352763">
-    <div>
-      <span class="left-side no-content-label">Supplier Name:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Supplier URL:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Supplier Email:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Supplier Phone:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Supplier Contact:</span>
-      <span class="right-side"></span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280352764" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Booking Site</div>
-  <div class="collapsible-body" id="20280352764">
-    <div>
-      <span class="left-side">Booking Reference #:</span>
-      <span class="right-side">2F484U</span>
-    </div>
-    <div>
-      <span class="left-side">Booking Site:</span>
-      <span class="right-side">Concur Travel</span>
-    </div>
-    <div>
-      <span class="left-side">Booking Date:</span>
-      <span class="right-side">10/25/2016</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site URL:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site Phone:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site Email:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Total Cost:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Rate:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side">Reservation Purchased:</span>
-      <span class="right-side">Yes</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Restrictions and Policies:</span>
-      <span class="right-side"></span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280352765" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Notes</div>
-  <div class="collapsible-body" id="20280352765">
-                <div class="empty-section no-content-label">No notes added</div>  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280352766" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Photos</div>
-  <div class="collapsible-body" id="20280352766">
-                <div class="empty-section no-content-label">No photos added</div>  </div>
-</div>
-      <div class="inline-air-ad">
-        <div id='gpt-ad-376896461' class='dfp-ad-container'
-            data-ad-unit='/19197427/tripit/webapp/tripshow/details' data-size='[[450,22],[450,1]]' data-pos='inlineair'></div>      </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="clr"></div>
-</div>
-<div id="trip_item_2028037827" class="trip_item" data-trip-item-id="2028037827" data-trip-item-type-code="H">
-  <div class="trip-item-object actionable-object">
-    <!-- ICON AND HEADER ROW -->
-    <div class="trip-item-row">
-      <div class="trip-item-icon">
-        <img alt="Lodging" title="Lodging" class="type_image_sprites_trip_4 type_image_lodging_sprites_trip_4" width="60" height="60" src="/images/clear.gif" />      </div>
-      <div class="trip-item-object-pane">
-        <div class="trip-item-header">
-  
-  <div class="date">
-    10/10/2017  </div>
-  <div class="main-info">
-    Arrive New York Marriott Marquis  </div>
-  <div class="other-info">
-    <div class="left">Confirmation #: <strong></strong></div>
-    <div class="right"></div>
-  </div>
-</div>
-      </div>
-    </div>
-    <div class="" id="2028037827">
-    <!-- REST OF TRIP ITEM CONTENT -->
-    <div class="trip-item-row">
-      <div class="object-actions">
-<ul class="trip-item-options hide-on-print">
-  <li>
-    <a class="_test_edit_trip_item" href="/reservation/edit/id/768083825#a_segment_2028037827">Edit <span class="opt opt-edit"></span></a>  </li>
-  <li>
-    <a href="/reservation/updateCopy/id/768083825?redirect_url=https%3A%2F%2Fwww.tripit.com%2Ftrip%2Fshow%2Fid%2F189998028">Copy <span class="opt opt-copy"></span></a>  </li>
-  <li>
-    <a href="/reservation/updateMove/id/768083825?redirect_url=https%3A%2F%2Fwww.tripit.com%2Ftrip%2Fshow%2Fid%2F189998028">Move <span class="opt opt-move"></span></a>  </li>
-  <li>
-    <a href="/trip_item/share/id/2028037827">Share <span class="opt opt-share"></span></a>  </li>
-    <li>
-      <form id="delete-form" accept-charset="UTF-8" method="post" action="/reservation/delete"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" />        <input type="hidden" name="id" value="768083825" />        <button  type="submit" onclick="return confirm(&quot;Are you sure you want to delete this entire  reservation?&quot;);" class="_test_delete_trip_item deprecatedLinkify">Delete <span class="opt opt-delete"></span></button>      </form>
-    </li>
-</ul>
-      </div>
-      <div class="trip-item-object-pane">
-        <!-- MAIN CONTENT -->
-        <div class="trip-item-content">
-          <div class="full-column">
-  <div class="half-column">
-    <h3 class="checkpoint-type">Check-In</h3>
-    <div class="content-section primary-section">
-      <h3 class="heavy-font">15:00 <span class="am-pm"></span> <span class="timezone">EDT</span></h3>      <div><a href="https://www.tripit.com/trip/map?id=189998028&amp;trip_item_id=2028037827">1900 University Ave, New York, NY</a></div>
-      <div>4153773028</div>
-    </div>
-  </div>
-  <div class="half-column">
-    <h3 class="checkpoint-type">Check-Out</h3>
-    <div class="content-section secondary-section">
-      <div>
-        10/12/2017 (2 Nights)      </div>
-      <div>11:00</div>
-    </div>
-  </div>
-</div>
-          <!-- FLIGHT DETAILS -->
-        <!-- COLLAPSIBLE SECTIONS -->
-        <div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="" data-target-id="travelers-section-2028037827"data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>
-    Guest Info  </div>
-  <div id="travelers-section-2028037827" class="collapsible-body travelers">
-    <div class="traveler">
-      <span class="name">Masayo Okamoto</span>
-      <span class="ticket-num">Ticket #: </span>
-      <span class="loyalty-num">Frequent Guest #: </span>
-    </div>
-  </div>
-</div>
-
-        <div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280378271" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Stay Details</div>
-  <div class="collapsible-body" id="20280378271">
-    <div>
-      <span class="left-side">Number of Guests:</span>
-      <span class="right-side">1</span>
-    </div>
-    <div>
-      <span class="left-side">Number of Rooms:</span>
-      <span class="right-side">1</span>
-    </div>
-    <div>
-      <span class="left-side">Room Description:</span>
-      <span class="right-side">King Bed</span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280378272" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Travel Agency</div>
-  <div class="collapsible-body" id="20280378272">
-    <div>
-      <span class="left-side">Travel Agency Name:</span>
-      <span class="right-side">SXSW</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency Confirmation #:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency URL:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency Phone:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency Email:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency Contact:</span>
-      <span class="right-side"></span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280378273" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Supplier Info</div>
-  <div class="collapsible-body" id="20280378273">
-    <div>
-      <span class="left-side">Supplier Name:</span>
-      <span class="right-side">New York Marriott Marquis</span>
-    </div>
-    <div>
-      <span class="left-side">Supplier URL:</span>
-      <span class="right-side"><a target="_blank" href="https://www.tripit.com/home/redirectPage/page_key/FD787BA22FF0080CC66C3F23D264A3D0">http://www.sxsw.com/</a></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Supplier Email:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side">Supplier Phone:</span>
-      <span class="right-side">4153773028</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Supplier Contact:</span>
-      <span class="right-side"></span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280378274" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Booking Site</div>
-  <div class="collapsible-body" id="20280378274">
-    <div>
-      <span class="left-side no-content-label">Booking Reference #:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Date:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site URL:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site Phone:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site Email:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side">Total Cost:</span>
-      <span class="right-side">$1,836.00</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Rate:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side">Reservation Purchased:</span>
-      <span class="right-side">Yes</span>
-    </div>
-    <div>
-      <span class="left-side">Restrictions and Policies:</span>
-      <span class="right-side">The hotel will charge a first night&#039;s deposit in late February for room reservations. If the credit card used to guarantee the room is different from the card to be used for the deposit, please provide the new number to SXSW Housing prior to February 15, otherwise we cannot guarantee the hotel will charge the new card number. Guests who no-show or cancel within 7 days of their scheduled arrival will forfeit their deposit. If a deposit has not been processed, the hotel will charge a one-night penalty to the guest&rsquo;s credit card.</span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280378275" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Notes</div>
-  <div class="collapsible-body" id="20280378275">
-                <div class="note">Hotel Reservations Policy:
-Valid credit card required to guarantee reservation. (If the credit card on file will expire prior to the check-in date, guest is responsible for updating payment information.)
-There is a 3 night minimum stay required for rooms.
-An early departure fee of $200 will be charged by the hotel if the reservation is reduced in length of stay after check-in.
- 
-Hotel Rooms Cancellation Policy:
-The hotel will charge a first night&#039;s deposit in late February for room reservations. If the credit card used to guarantee the room is different from the card to be used for the deposit, please provide the new number to SXSW Housing prior to February 15, otherwise we cannot guarantee the hotel will charge the new card number.
-Guests who no-show or cancel within 7 days of their scheduled arrival will forfeit their deposit. If a deposit has not been processed, the hotel will charge a one-night penalty to the guest&rsquo;s credit card.</div>  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280378276" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Photos</div>
-  <div class="collapsible-body" id="20280378276">
-                <div class="empty-section no-content-label">No photos added</div>  </div>
-</div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="clr"></div>
-</div>
-<div class="hotel_inline_ad"></div>
-
-
-<div class="date_header add_plans">
-  <div class="arrow_separator">
-  <h2 class="content" data-tooltip="Oct 11, 2017">
-    <span class="edge"></span>
-    <span class="body"><a data-date="10/11/2017" data-trip-id="189998028" href="#">Wed, Oct 11</a></span>
-    <span class="tip"></span>
-  </h2>
-</div>
-  <span class="weather">
-  New York, NY: <img alt="rain" class="weather_condition weather_condition_rain" height="21" width="21" src="/images/clear.gif" />Rain 71&deg;F / 61&deg;F
-</span>
-  <span class="add_plans hide_on_print"><a class="hide_on_print" data-date="10/11/2017" data-trip-id="189998028" href="#">Add Plans</a></span>
-  <div class="popover add_event_popover">
-  <span class="caret_wrapper">
-    <span class="caret"></span>
-  </span>
-  <div class="popover_controls">
-    <a class="popover_close" href="#">X</a>  </div>
-  </div>
-</div><div class="clr"></div>
-<div id="trip_item_2028038809" class="trip_item" data-trip-item-id="2028038809" data-trip-item-type-code="Y">
-  <div class="trip-item-object actionable-object">
-    <!-- ICON AND HEADER ROW -->
-    <div class="trip-item-row">
-      <div class="trip-item-icon">
-        <img alt="Theatre" title="Theatre" class="type_image_sprites_trip_4 type_image_activity_theatre_sprites_trip_4" width="60" height="60" src="/images/clear.gif" />      </div>
-      <div class="trip-item-object-pane">
-        <div class="trip-item-header">
-  
-  <div class="date">
-    10/11/2017  </div>
-  <div class="main-info">
-    Hamilton, An American Musical  </div>
-  <div class="other-info">
-    <div class="left">Confirmation #: <strong></strong></div>
-    <div class="right"></div>
-  </div>
-</div>
-      </div>
-    </div>
-    <div class="" id="2028038809">
-    <!-- REST OF TRIP ITEM CONTENT -->
-    <div class="trip-item-row">
-      <div class="object-actions">
-<span class="trip_item_time" data-ts="1507762800">
-  <span class="time_display">19:00<span class="crosshairs"></span></span>
-  <span class="time_display_details">
-    <span class="am_pm"></span>
-    <span class="timezone">EDT</span>
-  </span>
-</span><ul class="trip-item-options hide-on-print">
-  <li>
-    <a class="_test_edit_trip_item" href="/reservation/edit/id/768084297#a_segment_2028038809">Edit <span class="opt opt-edit"></span></a>  </li>
-  <li>
-    <a href="/reservation/updateCopy/id/768084297?redirect_url=https%3A%2F%2Fwww.tripit.com%2Ftrip%2Fshow%2Fid%2F189998028">Copy <span class="opt opt-copy"></span></a>  </li>
-  <li>
-    <a href="/reservation/updateMove/id/768084297?redirect_url=https%3A%2F%2Fwww.tripit.com%2Ftrip%2Fshow%2Fid%2F189998028">Move <span class="opt opt-move"></span></a>  </li>
-  <li>
-    <a href="/trip_item/share/id/2028038809">Share <span class="opt opt-share"></span></a>  </li>
-    <li>
-      <form id="delete-form" accept-charset="UTF-8" method="post" action="/reservation/delete"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" />        <input type="hidden" name="id" value="768084297" />        <button  type="submit" onclick="return confirm(&quot;Are you sure you want to delete this entire  reservation?&quot;);" class="_test_delete_trip_item deprecatedLinkify">Delete <span class="opt opt-delete"></span></button>      </form>
-    </li>
-</ul>
-      </div>
-      <div class="trip-item-object-pane">
-        <!-- MAIN CONTENT -->
-        <div class="trip-item-content">
-          <div class="full-column">
-  <div class="half-column">
-    <div class="content-section">
-      <div><span class="no-content-label">Location Name</span></div>
-      <div><a href="https://www.tripit.com/trip/map?id=189998028&amp;trip_item_id=2028038809">266 W 46th Street, New York, NY</a></div>
-    </div>
-  </div>
-  <div class="half-column">
-    <h4>End</h4>
-    <div class="content-section">
-      <div>
-        21:00        <span> on </span>
-        10/11/2017      </div>
-      <div>
-        2H      </div>
-    </div>
-  </div>
-</div>
-          <!-- FLIGHT DETAILS -->
-        <!-- COLLAPSIBLE SECTIONS -->
-        <div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="1" data-target-id="travelers-section-2028038809"data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>
-    Attendee Info  </div>
-  <div id="travelers-section-2028038809" class="collapsible-body travelers">
-    <div class="traveler">
-      <span class="name">Full Name</span>
-      <span class="ticket-num">Ticket #: </span>
-      <span class="loyalty-num">Loyalty Program #: </span>
-    </div>
-  </div>
-</div>
-
-        <div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280388091" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Travel Agency</div>
-  <div class="collapsible-body" id="20280388091">
-    <div>
-      <span class="left-side no-content-label">Travel Agency Name:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency Confirmation #:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency URL:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency Phone:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency Email:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency Contact:</span>
-      <span class="right-side"></span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280388092" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Supplier Info</div>
-  <div class="collapsible-body" id="20280388092">
-    <div>
-      <span class="left-side no-content-label">Supplier Name:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Supplier URL:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Supplier Email:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Supplier Phone:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Supplier Contact:</span>
-      <span class="right-side"></span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280388093" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Booking Site</div>
-  <div class="collapsible-body" id="20280388093">
-    <div>
-      <span class="left-side no-content-label">Booking Reference #:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Date:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site URL:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site Phone:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site Email:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Total Cost:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Rate:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side">Reservation Purchased:</span>
-      <span class="right-side">Yes</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Restrictions and Policies:</span>
-      <span class="right-side"></span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280388094" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Notes</div>
-  <div class="collapsible-body" id="20280388094">
-                <div class="empty-section no-content-label">No notes added</div>  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280388095" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Photos</div>
-  <div class="collapsible-body" id="20280388095">
-                <div class="empty-section no-content-label">No photos added</div>  </div>
-</div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="clr"></div>
-</div>
-
-
-
-<div class="date_header add_plans">
-  <div class="arrow_separator">
-  <h2 class="content" data-tooltip="Oct 12, 2017">
-    <span class="edge"></span>
-    <span class="body"><a data-date="10/12/2017" data-trip-id="189998028" href="#">Thu, Oct 12</a></span>
-    <span class="tip"></span>
-  </h2>
-</div>
-  <span class="weather">
-  San Francisco, CA: <img alt="partly_cloudy" class="weather_condition weather_condition_partly_cloudy" height="21" width="21" src="/images/clear.gif" />Partly Cloudy 66&deg;F / 51&deg;F
-</span>
-  <span class="add_plans hide_on_print"><a class="hide_on_print" data-date="10/12/2017" data-trip-id="189998028" href="#">Add Plans</a></span>
-  <div class="popover add_event_popover">
-  <span class="caret_wrapper">
-    <span class="caret"></span>
-  </span>
-  <div class="popover_controls">
-    <a class="popover_close" href="#">X</a>  </div>
-  </div>
-</div><div class="clr"></div>
-<div id="trip_item_2028037828" class="trip_item" data-trip-item-id="2028037828" data-trip-item-type-code="H">
-  <div class="trip-item-object actionable-object">
-    <!-- ICON AND HEADER ROW -->
-    <div class="trip-item-row">
-      <div class="trip-item-icon">
-        <img alt="Lodging" title="Lodging" class="type_image_sprites_trip_4 type_image_lodging_sprites_trip_4" width="60" height="60" src="/images/clear.gif" />      </div>
-      <div class="trip-item-object-pane">
-        <div class="trip-item-header">
-  
-  <div class="date">
-    10/12/2017  </div>
-  <div class="main-info">
-    Depart New York Marriott Marquis  </div>
-  <div class="other-info">
-    <div class="left">Confirmation #: <strong></strong></div>
-    <div class="right"></div>
-  </div>
-</div>
-      </div>
-    </div>
-    <div class="" id="2028037828">
-    <!-- REST OF TRIP ITEM CONTENT -->
-    <div class="trip-item-row">
-      <div class="object-actions">
-<ul class="trip-item-options hide-on-print">
-  <li>
-    <a class="_test_edit_trip_item" href="/reservation/edit/id/768083825#a_segment_2028037828">Edit <span class="opt opt-edit"></span></a>  </li>
-  <li>
-    <a href="/reservation/updateCopy/id/768083825?redirect_url=https%3A%2F%2Fwww.tripit.com%2Ftrip%2Fshow%2Fid%2F189998028">Copy <span class="opt opt-copy"></span></a>  </li>
-  <li>
-    <a href="/reservation/updateMove/id/768083825?redirect_url=https%3A%2F%2Fwww.tripit.com%2Ftrip%2Fshow%2Fid%2F189998028">Move <span class="opt opt-move"></span></a>  </li>
-  <li>
-    <a href="/trip_item/share/id/2028037828">Share <span class="opt opt-share"></span></a>  </li>
-    <li>
-      <form id="delete-form" accept-charset="UTF-8" method="post" action="/reservation/delete"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" />        <input type="hidden" name="id" value="768083825" />        <button  type="submit" onclick="return confirm(&quot;Are you sure you want to delete this entire  reservation?&quot;);" class="_test_delete_trip_item deprecatedLinkify">Delete <span class="opt opt-delete"></span></button>      </form>
-    </li>
-</ul>
-      </div>
-      <div class="trip-item-object-pane">
-        <!-- MAIN CONTENT -->
-        <div class="trip-item-content">
-          <div class="full-column">
-  <div class="half-column">
-    <h3 class="checkpoint-type">Check-In</h3>
-    <div class="content-section secondary-section">
-      <div>
-        10/10/2017 at 15:00      </div>
-    </div>
-  </div>
-  <div class="half-column">
-    <h3 class="checkpoint-type">Check-Out</h3>
-    <div class="content-section primary-section">
-      <h3 class="heavy-font">11:00 <span class="am-pm"></span> <span class="timezone">EDT</span></h3>      <div><a href="https://www.tripit.com/trip/map?id=189998028&amp;trip_item_id=2028037828">1900 University Ave, New York, NY</a></div>
-      <div>4153773028</div>
-    </div>
-  </div>
-</div>
-          <!-- FLIGHT DETAILS -->
-        <!-- COLLAPSIBLE SECTIONS -->
-        <div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="" data-target-id="travelers-section-2028037828"data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>
-    Guest Info  </div>
-  <div id="travelers-section-2028037828" class="collapsible-body travelers">
-    <div class="traveler">
-      <span class="name">Masayo Okamoto</span>
-      <span class="ticket-num">Ticket #: </span>
-      <span class="loyalty-num">Frequent Guest #: </span>
-    </div>
-  </div>
-</div>
-
-        <div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280378281" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Stay Details</div>
-  <div class="collapsible-body" id="20280378281">
-    <div>
-      <span class="left-side">Number of Guests:</span>
-      <span class="right-side">1</span>
-    </div>
-    <div>
-      <span class="left-side">Number of Rooms:</span>
-      <span class="right-side">1</span>
-    </div>
-    <div>
-      <span class="left-side">Room Description:</span>
-      <span class="right-side">King Bed</span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280378282" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Travel Agency</div>
-  <div class="collapsible-body" id="20280378282">
-    <div>
-      <span class="left-side">Travel Agency Name:</span>
-      <span class="right-side">SXSW</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency Confirmation #:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency URL:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency Phone:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency Email:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency Contact:</span>
-      <span class="right-side"></span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280378283" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Supplier Info</div>
-  <div class="collapsible-body" id="20280378283">
-    <div>
-      <span class="left-side">Supplier Name:</span>
-      <span class="right-side">New York Marriott Marquis</span>
-    </div>
-    <div>
-      <span class="left-side">Supplier URL:</span>
-      <span class="right-side"><a target="_blank" href="https://www.tripit.com/home/redirectPage/page_key/B3A9FAFA32EB0BB1E3270A46A646E16C">http://www.sxsw.com/</a></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Supplier Email:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side">Supplier Phone:</span>
-      <span class="right-side">4153773028</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Supplier Contact:</span>
-      <span class="right-side"></span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280378284" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Booking Site</div>
-  <div class="collapsible-body" id="20280378284">
-    <div>
-      <span class="left-side no-content-label">Booking Reference #:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Date:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site URL:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site Phone:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site Email:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side">Total Cost:</span>
-      <span class="right-side">$1,836.00</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Rate:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side">Reservation Purchased:</span>
-      <span class="right-side">Yes</span>
-    </div>
-    <div>
-      <span class="left-side">Restrictions and Policies:</span>
-      <span class="right-side">The hotel will charge a first night&#039;s deposit in late February for room reservations. If the credit card used to guarantee the room is different from the card to be used for the deposit, please provide the new number to SXSW Housing prior to February 15, otherwise we cannot guarantee the hotel will charge the new card number. Guests who no-show or cancel within 7 days of their scheduled arrival will forfeit their deposit. If a deposit has not been processed, the hotel will charge a one-night penalty to the guest&rsquo;s credit card.</span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280378285" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Notes</div>
-  <div class="collapsible-body" id="20280378285">
-                <div class="note">Hotel Reservations Policy:
-Valid credit card required to guarantee reservation. (If the credit card on file will expire prior to the check-in date, guest is responsible for updating payment information.)
-There is a 3 night minimum stay required for rooms.
-An early departure fee of $200 will be charged by the hotel if the reservation is reduced in length of stay after check-in.
- 
-Hotel Rooms Cancellation Policy:
-The hotel will charge a first night&#039;s deposit in late February for room reservations. If the credit card used to guarantee the room is different from the card to be used for the deposit, please provide the new number to SXSW Housing prior to February 15, otherwise we cannot guarantee the hotel will charge the new card number.
-Guests who no-show or cancel within 7 days of their scheduled arrival will forfeit their deposit. If a deposit has not been processed, the hotel will charge a one-night penalty to the guest&rsquo;s credit card.</div>  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280378286" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Photos</div>
-  <div class="collapsible-body" id="20280378286">
-                <div class="empty-section no-content-label">No photos added</div>  </div>
-</div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="clr"></div>
-</div>
-<div class="air_segment_status">
-  </div>
-<div id="trip_item_2028035277" class="trip_item" data-trip-item-id="2028035277" data-trip-item-type-code="A">
-  <div class="trip-item-object actionable-object">
-    <!-- ICON AND HEADER ROW -->
-    <div class="trip-item-row">
-      <div class="trip-item-icon">
-        <img alt="Flight" title="Flight" class="type_image_sprites_trip_4 type_image_air_sprites_trip_4" width="60" height="60" src="/images/clear.gif" />      </div>
-      <div class="trip-item-object-pane">
-        <div class="trip-item-header">
-  
-    <div class="text-info-with-partner">
-
-  <div class="date">
-    10/12/2017  </div>
-  <div class="main-info">
-    JFK to SFO    <span class="separator"></span>
-    <span class="more-info">Virgin America 5498</span>
-  </div>
-  <div class="other-info">
-    <div class="left">Confirmation #: <strong>H1T91Y</strong></div>
-    <div class="right"></div>
-  </div>
-    </div>
-    <div class="agency-logo">
-        <img alt="Travel Incorporated" title="Travel Incorporated" src="https://www.tripit.com/uploads/images/3/9/2/39247af65cbae7b91c277baeae615f3dc68.png" />    </div>
-</div>
-      </div>
-    </div>
-    <div class="" id="2028035277">
-<div class="trip-item-row">
-  <div class="trip-item-time-cell">
-<span class="trip_item_time" >
-  <span class="time_display">18:00<span class="crosshairs"></span></span>
-  <span class="time_display_details">
-    <span class="am_pm"></span>
-    <span class="timezone">EDT</span>
-  </span>
-</span>  </div>
-  <div class="trip-item-object-pane">
-    <div class="checkpoint">
-      <h3 class="checkpoint-type">Depart</h3>
-      <h2 class="airport-name">New York</h2>
-      <div class="gate-location">
-        <span class="terminal-section">
-          Terminal:
-          <span class="terminal"></span>
-        </span>
-        <span class="gate-section">
-          Gate:
-          <span class="gate"></span>
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="trip-item-row">
-  <div class="trip-item-time-cell">
-<span class="trip_item_time" >
-  <span class="time_display">21:33<span class="crosshairs"></span></span>
-  <span class="time_display_details">
-    <span class="am_pm"></span>
-    <span class="timezone">PDT</span>
-  </span>
-</span>  </div>
-  <div class="trip-item-object-pane">
-    <div class="checkpoint">
-      <h3 class="checkpoint-type">Arrive</h3>
-      <h2 class="airport-name">San Francisco</h2>
-      <div class="gate-location">
-        <span class="terminal-section">
-          Terminal:
-          <span class="terminal">3</span>
-        </span>
-        <span class="gate-section">
-          Gate:
-          <span class="gate"></span>
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-    <!-- REST OF TRIP ITEM CONTENT -->
-    <div class="trip-item-row">
-      <div class="object-actions">
-<ul class="trip-item-options hide-on-print">
-  <li>
-    <a class="_test_edit_trip_item" href="/reservation/edit/id/768082669#a_segment_2028035277">Edit <span class="opt opt-edit"></span></a>  </li>
-  <li>
-    <a href="/reservation/updateCopy/id/768082669?redirect_url=https%3A%2F%2Fwww.tripit.com%2Ftrip%2Fshow%2Fid%2F189998028">Copy <span class="opt opt-copy"></span></a>  </li>
-  <li>
-    <a href="/reservation/updateMove/id/768082669?redirect_url=https%3A%2F%2Fwww.tripit.com%2Ftrip%2Fshow%2Fid%2F189998028">Move <span class="opt opt-move"></span></a>  </li>
-  <li>
-    <a href="/trip_item/share/id/2028035277">Share <span class="opt opt-share"></span></a>  </li>
-    <li>
-      <form id="delete-form" accept-charset="UTF-8" method="post" action="/reservation/delete"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" />        <input type="hidden" name="trip_item_id" value="2028035277" />        <button  type="submit" onclick="return confirm(&quot;Are you sure you want to delete this  segment?&quot;);" class="_test_delete_trip_item deprecatedLinkify">Delete <span class="opt opt-delete"></span></button>      </form>
-    </li>
-</ul>
-      </div>
-      <div class="trip-item-object-pane">
-        <!-- MAIN CONTENT -->
-        <div class="trip-item-content">
-                    <!-- FLIGHT DETAILS -->
-<div class="duration-checkpoint">
-  <div class="duration-location">
-    <span class="duration-section">
-      Duration: <span class="duration">6H, 33M</span>    </span>
-    <span class="layover-section">
-      Layover: <span class="no-content-label">None</span>    </span>
-    <span class="connection-section">
-      Connects to: <span class="no-content-label">None</span>    </span>
-  </div>
-</div>
-
-          <!-- SEATS FOR FLIGHTS -->
-          <div class="seats-section">
-            Seat(s):
-            <strong class="seats">24D</strong>          </div>
-
-          <!-- PRO - ALT FLIGHTS -->
-          <div class='pro-checkpoint'>
-  <div class="pro-seat-location">
-
-    <span class='free-link-separator'></span>
-    <span class='seat-advice'><a target="_blank" class="track-click-event hide_on_print" href="http://data.seatexpert.com/tpi/find.php?airline=VX&amp;flight=5498&amp;date=Oct-12-2017&amp;city1=JFK&amp;city2=SFO">Get Seat Advice</a></span>
-      </div>
-</div>
-        <!-- COLLAPSIBLE SECTIONS -->
-        <div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="" data-target-id="travelers-section-2028035277"data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>
-    Traveler Info  </div>
-  <div id="travelers-section-2028035277" class="collapsible-body travelers">
-    <div class="traveler">
-      <span class="name">Masayo Okamoto</span>
-      <span class="ticket-num">Ticket #: </span>
-      <span class="loyalty-num">Frequent Flyer #: UVW53268</span>
-    </div>
-  </div>
-</div>
-
-        <div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280352771" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Aircraft and Service Details</div>
-  <div class="collapsible-body" id="20280352771">
-    <div>
-      <span class="left-side no-content-label">Baggage Claim:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Entertainment:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side">Meal:</span>
-      <span class="right-side">Meal at Cost</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">On-time %:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side">Aircraft Type:</span>
-      <span class="right-side">Embraer 175 (Enhanced Winglets)</span>
-    </div>
-    <div>
-      <span class="left-side">Fare Class:</span>
-      <span class="right-side">Economy (V)</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Stops:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Distance:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Segment Notes:</span>
-      <span class="right-side"></span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="false" data-target-id="20280352772" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Travel Agency</div>
-  <div class="collapsible-body" id="20280352772">
-    <div>
-      <span class="left-side">Travel Agency Name:</span>
-      <span class="right-side">Travel Incorporated</span>
-    </div>
-    <div>
-      <span class="left-side">Travel Agency Confirmation #:</span>
-      <span class="right-side">2F484U</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency URL:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side">Travel Agency Phone:</span>
-      <span class="right-side">866-712-2801</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency Email:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Travel Agency Contact:</span>
-      <span class="right-side"></span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280352773" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Supplier Info</div>
-  <div class="collapsible-body" id="20280352773">
-    <div>
-      <span class="left-side no-content-label">Supplier Name:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Supplier URL:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Supplier Email:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Supplier Phone:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Supplier Contact:</span>
-      <span class="right-side"></span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280352774" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Booking Site</div>
-  <div class="collapsible-body" id="20280352774">
-    <div>
-      <span class="left-side">Booking Reference #:</span>
-      <span class="right-side">2F484U</span>
-    </div>
-    <div>
-      <span class="left-side">Booking Site:</span>
-      <span class="right-side">Concur Travel</span>
-    </div>
-    <div>
-      <span class="left-side">Booking Date:</span>
-      <span class="right-side">10/25/2016</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site URL:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site Phone:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Site Email:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Total Cost:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Booking Rate:</span>
-      <span class="right-side"></span>
-    </div>
-    <div>
-      <span class="left-side">Reservation Purchased:</span>
-      <span class="right-side">Yes</span>
-    </div>
-    <div>
-      <span class="left-side no-content-label">Restrictions and Policies:</span>
-      <span class="right-side"></span>
-    </div>
-  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280352775" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Notes</div>
-  <div class="collapsible-body" id="20280352775">
-                <div class="empty-section no-content-label">No notes added</div>  </div>
-</div>
-<div class="collapsible">
-  <div class="collapsible-heading" data-collapsed="true" data-target-id="20280352776" data-open-sign='<span class="caret">▼</span>' data-closed-sign='<span class="caret">▶</span>'>Photos</div>
-  <div class="collapsible-body" id="20280352776">
-                <div class="empty-section no-content-label">No photos added</div>  </div>
-</div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="clr"></div>
-</div>
-  </div>
-  <div class="popover" id="how_to_CTA">
-    <div class="popover_controls">
-      <a title="Close" class="blue_popover_close" href="#">X</a>    </div>
-    <span class="caret_wrapper">
-      <span class="caret"></span>
-    </span>
-    <div id="how_to_blue"></div>
-  </div>
-  <div class="inline_ad">
-    <div class="inline_trip_completer hide_on_print">
-  <div id='gpt-ad-178094207' class='dfp-ad-container'
-            data-ad-unit='/19197427/tripit/webapp/tripshow/details' data-size='[[610,32],[610,1]]' data-pos='inlinecar'></div>  </div>
-<div class="clr"></div>
-  </div>
+  <div class="sidebar">
+    <div class="ads">
+      <div class="ad">
+        <div id='gpt-ad-1362240593' class='dfp-ad-container'
+            data-ad-unit='/19197427/tripit/webapp/signinhome' data-size='[[300,250],[300,1]]' data-pos='uppermrec'></div>      </div>
+    </div> <!-- /.ads -->
+  </div> <!-- /.sidebar -->
   <div class="hidden" id="user-info" data-name="Sam Thompson" data-email="masayo@tripit.com"></div>
-</div>
-<div id="ads">
-  <div id='gpt-ad-1773654283' class='dfp-ad-container'
-            data-ad-unit='/19197427/tripit/webapp/tripshow/details' data-size='[[300,250],[300,600],[300,1]]' data-pos='multisize'></div>  <div id="comments_container">
-    <span class="success" id="comment_added">Comment added</span>
-    <span class="error" id="comment_not_added">Comment not added</span>
-    <span class="success" id="comment_deleted">Comment deleted</span>
-    <span class="error" id="comment_not_deleted">Comment not deleted</span>
-    <div class="scrollpane">
-      <div id="comments">
-<form id="add_comment" accept-charset="UTF-8" method="post" action="/trip/updateComment"><input type="hidden" name="csrf_token" value="9DCD7D0E29699DAE78FBB94EBEFB0E57" />  <fieldset>
-    <input type="hidden" name="id" />    <input type="hidden" name="trip_id" value="189998028" />    <label for="comment_box">Post a comment</label>
-    <textarea id="comment_box" name="text" rows="10" cols="40" wrap="soft"></textarea>
-    <div class="author">
-      <div class="profile_photo " style="background: #FFF url(/images/icons/blank_profile_s.png) no-repeat -0px -0px;"></div>
-      Sam Thompson    </div>
-  </fieldset>
-  <button  type="submit" class="primary">Post</button>  <img title="Loading" alt="Loading" class="loading" src="/images/icons/ajax_loader.gif" /></form>        <div id="comments_collection">
+</div> <!-- /.wrapper -->
+
+<!-- /.wrapper -->
+<div class="modal auto-import-add-modal" data-show="">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        Automatically Forward Plans
+      </div>
+      <div class="modal-body">
+        <!-- activation -->
+        <div id="activation-block" class="">
+          <p><strong>Never forget to forward a confirmation email again.</strong></p>
+          <p>Just enter an email from our list of supported providers. We'll watch your inbox for new travel plans and copy them to your TripIt account, for free!</p>
+          <p>
+                <ul id="auto_import_providers"><li><img class="provider_logo" alt="Outlook.com" src="/images/logos/outlook_194x50.png" /><ul class="sample_domains"><li>outlook.com</li>
+<li>live.com</li>
+<li>msn.com</li>
+<li>hotmail.com</li></ul></li>
+<li><img class="provider_logo" alt="Yahoo Mail" src="/images/logos/yahoo_194x50.png" /><ul class="sample_domains"><li>yahoo.com</li></ul></li>
+<li><img class="provider_logo" alt="Gmail" src="/images/logos/google_194x50.png" /><ul class="sample_domains"><li>gmail.com</li>
+<li>Google Apps</li></ul></li></ul>    <div class="clr"></div>
+          </p>
+          <p class="text-right">
+            <a class="auto-import-help" target="_blank" href="https://www.tripit.com/home/redirectPage/page_key/8F4290CE1FF75F2A7A53EBFBBED08C72">See a full list of providers</a>          </p>
+          <div class="auto-import-data">
+            <form id="autoImportForm" name="autoImportForm" accept-charset="UTF-8" method="post" action="/account/updateAutoInboxImport"><input type="hidden" name="csrf_token" value="DC9DABCAF41BC78EC921EC3AF9E54E2D" />              <p>
+                <div><strong>Import plans from this email:</strong></div>
+                <input id="auto-import-email" name="email_address" type="email" class="form-control" placeholder="Enter your email address" value="masayo@tripit.com">
+                <input type="hidden" id="is-reactivation-attempt" name="is_reactivation_attempt" value="false" />                <input type="hidden" name="page_that_invoked_auto_import" value="home/index">
+              </p>
+              <div class="actions">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- confirmation -->
+        <div id="confirmation-block" class="hidden">
+          <h1 class="bg-success">Success!</h1>
+          <div>
+            Auto Import has been activated for <strong></strong>.
+          </div>
+          <div>
+            TripIt will automatically check for new plans in your inbox multiple times a day.
+          </div>
+          <div id="add-another-email">
+            <a href="#"><strong>Add another email address</strong></a>
+          </div>
         </div>
       </div>
-      <div class="scrollbar">
-        <div class="scrollbar_handle"></div>
+    </div>
+  </div>
+</div><div class="modal" id="share-trip-modal" tabindex="-1" role="dialog" aria-labelledby="share-trip-header">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="share-trip-header">Share Trip</h4>
+      </div>
+
+      <div class="modal-body">
+        <div id="btn-group-wrapper">
+          <div class="btn-group" data-toggle="buttons" role="tablist">
+            <label id="email-tab" class="btn btn-primary active" role="tab" data-toggle="tab" data-target="#email">
+              <input type="radio" name="options" id="email-tab" autocomplete="off" role="tab" checked> <strong>Email</strong>
+            </label>
+            <label id="link-tab" class="btn btn-primary" role="tab" data-toggle="tab" data-target="#link">
+              <input type="radio" name="options" id="link-tab" autocomplete="off"> <strong>Link</strong>
+            </label>
+          </div>
+        </div>
+
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="email">
+            <form id="trip-invitation" method="POST" action="/trip_invitation/updateSend">
+              <div class="notices"></div>
+              <div class="form-group">
+                <p class="fieldBlock"><label for="email_addresses">Send to:</label>
+<input id="email_addresses" class="form-control itUI-namesAndEmailAddresses" name="email_addresses" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" size="60" placeholder="Enter an email address or TripIt Connection&#039;s name" /></p>
+              </div>
+              <div class="form-group">
+                <label for="message-textarea">Message:</label>
+                <textarea id="message-textarea" class="form-control" rows="5" disabled>I use TripIt to organize and share travel plans, so trip details are in one place.
+
+I simply forwarded travel confirmation emails to plans@tripit.com, and TripIt automatically created this detailed itinerary that can be accessed anytime, on any device. Try it. It's free.</textarea>
+              </div>
+              <input type="hidden" name="invitation_type" value="viewer">
+              <input type="hidden" name="trip_id">
+            </form>
+
+            <div id="share-trip-success" class="hidden">
+              <h3 class="alert alert-success">Success!</h3>
+              <p>Your email has been sent!</p>
+              <p id="inner_circle_upsell" class="sharing-upsell">Automatically share all of your trips. <a href="/mynetwork/list/is_inner_circle_only/1">Add People</a> to your inner circle.</p>
+            </div>
+
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="link">
+            <p>Share your travel plans using the link below and allow family, friends and colleagues to view your trip itinerary with one click.</p>
+            <textarea id="trip-public-url" class="form-control" rows="1" readonly></textarea>
+          </div>
+
+        </div>
+      </div>
+      <div id="modal-footer-form" class="modal-footer">
+        <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+        <button id="send-share-trip-form" class="btn btn-default">Send</button>
+      </div>
+      <div id="modal-footer-close" class="modal-footer hidden">
+        <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-  <div class="clr"></div>
-</div>
-<div class="popover" id="add_event_popover">
-  <span class="caret_wrapper">
-    <span class="caret"></span>
-  </span>
-  <div class="popover_controls">
-    <a class="popover_close" href="#">X</a>  </div>
-</div>
-      <div class="clr"></div>
+</div><div class="modal" id="add-tripit-to-calendar-modal" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Get iCal Feed</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+          <span class="ical-icon-md"></span>
+        </p>
+        <p>To add your TripIt itineraries to your email calendar, copy and paste this URL into your calendar program:</p>
+        <p><a href="https://www.tripit.com/feed/ical/private/E46E6021-889925C04A1C034EC3DCAAB54A787D93/tripit.ics">https://www.tripit.com/feed/ical/private/E46E6021-889925C04A1C034EC3DCAAB54A787D93/tripit.ics</a></p>
+        <p>TripIt supports the following desktop email calendars: Apple, Google, and Microsoft Outlook (2010 for Windows, 2011 for Mac)</p>
+      </div>
+      <div class="modal-footer">
+        <a href="http://help.tripit.com/entries/94887">Get help with calendar</a>      </div>
     </div>
   </div>
-  <!-- footer start -->
-<div id="tripit_content_footer" class="footer-not-pushed-down">
-  <ul>
-    <li>
-      <ul class="footer_column">
-        <li data-href="/uhp/features"><h4>Our Products</h4></li>
-        <li><a target="_blank" rel="nofollow" href="http://help.tripit.com/login">Get Help</a></li>
-        <li><a href="/uhp/features">Learn More!</a></li>
-        <li><a href="/uhp/mobile">Go Mobile</a></li>
-        <li><a href="https://www.tripit.com/pro/upgrade?us=ti&amp;um=ip&amp;un=pf">TripIt Pro</a></li>
-        <li><a href="https://www.tripit.com/gift?us=ti&amp;um=ip&amp;un=pg">Gift TripIt Pro</a></li>
-        <li><a href="https://www.tripit.com/teams?us=ti&amp;um=ip&amp;un=fo">TripIt for Teams</a></li>
-        <li><a href="https://www.tripit.com/tmc?us=ti&amp;um=ip&amp;un=tm">TripIt for TMCs</a></li>
-        <li><a href="/uhp/groups">TripIt Groups</a></li>
-        <li><a href="/uhp/supportedVendors">Supported Sites</a></li>
-      </ul>
-    </li>
-    <li>
-      <ul class="footer_column">
-        <li data-href="http://www.tripit.com/press/about"><h4>Our Company</h4></li>
-        <li><a href="http://www.tripit.com/press/about">About Us</a></li>
-        <li><a href="http://www.tripit.com/blog">Blog</a></li>
-        <li><a href="http://www.tripit.com/press">Press</a></li>
-        <li><a href="/developer">Developer API</a></li>
-        <li><a href="/uhp/tools">Apps We Work With</a></li>
-        <li><a target="_blank" href="https://www.tripit.com/lp/security">Security</a></li>
-        <li><a rel="nofollow" href="http://careers.tripit.com/">Jobs</a></li>
-      </ul>
-    </li>
-    <li>
-      <ul class="footer_column mobile">
-        <li data-href="/uhp/mobile"><h4>TripIt Mobile</h4></li>
-        <li><a target="_blank" rel="nofollow" href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=311035142&amp;mt=8">iPhone</a> | <a target="_blank" rel="nofollow" href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=311035142&amp;mt=8">iPad</a></li>
-        <li><a target="_blank" rel="nofollow" href="https://market.android.com/details?id=com.tripit">Android</a></li>
-      </ul>
-    </li>
-    <li>
-      <ul class="footer_column">
-        <li><h4>Follow Us</h4></li>
-        <li>
-          <ul class="social_buttons">
-            <li>
-              <a target="_blank" href="https://www.facebook.com/tripitcom"><img alt="Facebook" src="/images/logos/facebook.png" /></a>              <!--div class="fb-like" data-href="https://www.facebook.com/tripitcom" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div-->
-            </li>
-            <li>
-              <a href="https://twitter.com/TripIt" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @TripIt</a>
-            </li>
+</div>    </div>
+    
+<div class='footer'>
+  <div class='container'>
+    <div class='footer-content'>
+      <div class='company-information'>
+        <div class='footer-social'>
+          <a alt="TripIt" class="footer-tripit" href="/"> </a>          <div class='social-icons'>
+            <a alt="Facebook" class="social-icon-facebook footer-icon" href="https://www.facebook.com/tripitcom"> </a>            <a alt="Twitter" class="social-icon-twitter footer-icon" href="https://twitter.com/TripIt"> </a>            <a alt="LinkedIn" class="social-icon-linkedin footer-icon" href="http://www.linkedin.com/company/tripit"> </a>            <a alt="Google+" class="social-icon-google footer-icon" href="https://plus.google.com/107322908856353043972"> </a>            <a alt="YouTube" class="social-icon-youtube footer-icon" href="http://www.youtube.com/user/tripitvideos"> </a>            <a alt="RSS" class="social-icon-rss footer-icon" href="http://www.tripit.com/blog/feed"> </a>          </div>
+        </div>
+        <div class='footer-our-products'>
+          <ul>
+            <h4>Our Products</h4>
+            <li><a href="/uhp/features">TripIt</a></li>
+            <li><a href="https://www.tripit.com/pro/upgrade?us=ti&amp;um=ip&amp;un=pf">TripIt Pro</a></li>
+            <li><a href="https://www.tripit.com/teams?us=ti&amp;um=ip&amp;un=fo">TripIt for Teams</a></li>
+            <li><a href="https://www.tripit.com/tmc?us=ti&amp;um=ip&amp;un=tm">TripIt for TMCs</a></li>
+            <li><a href="http://help.tripit.com/login">Help Center</a></li>
           </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
+        </div>
+        <div class='footer-our-company'>
+          <ul>
+            <h4>Our Company</h4>
+            <li class="hidden-xs"><a href="http://www.tripit.com/press/about">About Us</a></li>
+            <li class="hidden-xs"><a rel="nofollow" href="http://careers.tripit.com/">Jobs</a></li>
+            <li class="hidden-xs"><a href="http://www.tripit.com/blog">Blog</a></li>
+            <li class="hidden-xs"><a href="https://www.tripit.com/press">Press</a></li>
+            <li>
+              <a href="/uhp/privacyPolicy">Privacy Policy</a>            </li>
+            <li><a target="_blank" href="https://www.tripit.com/lp/security">Security</a></li>
+            <li><a href="/uhp/userAgreement">User Agreement</a></li>
+          </ul>
+        </div>
+        <div class='footer-other-stuff'>
+          <ul>
+            <h4>Other Stuff</h4>
+            <li><a href="/uhp/mobile">TripIt Mobile</a></li>
+            <li><a href="/uhp/groups">TripIt Groups</a></li>
+            <li><a href="https://www.tripit.com/gift?us=ti&amp;um=ip&amp;un=pg">Gift of TripIt Pro</a>            </li>
+            <li><a href="/developer">Developer API</a></li>
+            <li><a href="/uhp/tools">Supported Apps</a></li>
+            <li><a href="/uhp/supportedVendors">Supported Booking Sites</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='concur-info'>
+          <a alt="Concur" class="concur-logo" href="https://www.concur.com/"> </a>          <div class='concur-description'>
+            <small>&copy; 2006-2017,  Concur Technologies, Inc. All rights reserved. TripIt&reg; and Concur&reg; are registered
+                trademarks of Concur Technologies, Inc. Other trademarks held by their respective owners.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div id="sub_footer">
-  <ul>
-    <li><a rel="nofollow" href="/uhp/userAgreement">User Agreement</a></li>
-    <li><a rel="nofollow" href="/uhp/privacyPolicy">Privacy Policy</a></li>
-    <li>&copy; 2006-2017, Concur Technologies, Inc. All rights reserved. TripIt&reg; and Concur&reg; are registered trademarks of Concur Technologies, Inc. Other trademarks held by their respective owners.</li>
-  </ul>
-</div>
-<!-- footer end -->
+<div id="sihp-ad" class="navbar-fixed-bottom">
+  <div id='gpt-ad-1567841337' class='dfp-ad-container'
+            data-ad-unit='/19197427/tripit/webapp/signinhome' data-size='[[320,50],[320,1]]' data-pos='footer'></div></div>
   <script type="text/javascript">
     //appendTag function
     function appendTag(tagSource, scope, callBack) {
@@ -2126,26 +1037,16 @@ Guests who no-show or cancel within 7 days of their scheduled arrival will forfe
 <script type="text/javascript" src="/js/tripit/ui/creditCard.js?v=1bf62e17555c"></script>
 <script type="text/javascript" src="/js/tripit/util/tracking.js?v=1bf62e17555c"></script>
 <script type="text/javascript" src="/js/tripit/util/sessionUtil.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="/js/trip/show.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="/js/form.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="/js/components/auto_import_modal.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="/js/components/preview.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="/js/components/modal.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="/js/components/popover.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="/js/components/gallery.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="/js/components/scrollbar.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="/js/components/collapsible.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="/js/trip_item/show.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="/js/tripit/social/linkedin.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="/js/tripit/social/twitter.js?v=1bf62e17555c"></script>
+<script type="text/javascript" src="/js/home/index.js?v=1bf62e17555c"></script>
+<script type="text/javascript" src="/js/bootstrap/bootstrap.min.js?v=1bf62e17555c"></script>
+<script type="text/javascript" src="/js/components/v2_components.js?v=1bf62e17555c"></script>
+<script type="text/javascript" src="/js/components/auto_import_modal_v2.js?v=1bf62e17555c"></script>
 <script type="text/javascript" src="/js/components/importConnectionsModule.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="/js/components/participantsModule.js?v=1bf62e17555c"></script>
 <script type="text/javascript" src="/js/tripit/util/sharingEvent.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="/js/trip/sharing.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="/js/trip_invitation/create.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="//www.googletagservices.com/tag/js/gpt.js?v=1bf62e17555c"></script>
-<script type="text/javascript" src="/js/ui/dfp.js?v=1bf62e17555c"></script>
+<script type="text/javascript" src="/js/trip/v2_sharing.js?v=1bf62e17555c"></script>
 <script type="text/javascript" src="/js/jquery/jquery-ui.js?v=1bf62e17555c"></script>
 <script type="text/javascript" src="/js/components/autocompleter.js?v=1bf62e17555c"></script>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"bc74f64bc7","applicationID":"16542150","transactionName":"ZAdXbEMFXxZRAEdQX11NdFtFDV4LHxdBUEAcEV1XRg==","queueTime":0,"applicationTime":181,"atts":"SEBUGgsfTBg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<script type="text/javascript" src="//www.googletagservices.com/tag/js/gpt.js?v=1bf62e17555c"></script>
+<script type="text/javascript" src="/js/ui/dfp.js?v=1bf62e17555c"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"bc74f64bc7","applicationID":"16542150","transactionName":"ZAdXbEMFXxZRAEdQX11NdFtFDV4LHwtcVFUcC1tcVBw=","queueTime":0,"applicationTime":841,"atts":"SEBUGgsfTBg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
