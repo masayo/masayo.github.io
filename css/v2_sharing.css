@@ -1,0 +1,16 @@
+#share-trip-modal #btn-group-wrapper {
+  margin-bottom: 20px;
+  text-align: center;
+}
+#share-trip-modal textarea {
+  resize: none;
+}
+#share-trip-modal label {
+  margin-bottom: 10px;
+}
+#share-trip-modal #link p {
+  text-align: center;
+}
+#share-trip-modal #link textarea {
+  background-color: inherit;
+}
