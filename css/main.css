@@ -1,0 +1,15 @@
+nav a {
+	color: #fff;
+}
+
+nav#top-nav {
+	background-color: #0782c5; 
+	color: #fff;
+	padding: 30px;
+}
+
+footer {
+	background-color: rgb(68, 68, 68);
+	color: rgb(152, 152, 152);
+	padding: 30px;
+}
